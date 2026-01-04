@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a robust CRM integration solution for quote processing. It streamlines the workflow between Zoho CRM, Airtable, and a dynamic PDF generation engine.
+I architected and implemented a robust CRM integration solution for quote processing. It streamlines the workflow between Zoho CRM, Airtable, and a dynamic PDF generation engine.
 automating business logic, quote handling, data collection, and PDF document creation. Designed for scalability and developer extensibility, 
 Ideal for organizations seeking a seamless link between their CRM, document workflows, and external management platforms.
 
@@ -49,6 +49,14 @@ A Workflow Rule is created on the **Quotes** (or relevant) module to detect when
 - **Zoho CRM API** & **Airtable API**
 - **Docker & Docker Compose**
 - **Handlebars, PDFKit** (for template-driven PDF files)
+
+
+## Example Zoho Workflow Rule
+
+Below is an example of a Zoho CRM Workflow Rule configuration that triggers the quote processing integration. You can use a similar setup to initiate API calls or Deluge functions on quote creation or updates:
+
+![Quote Created Workflow Rule](static/quote-created-workflow-rule.png)
+
 
 > **Note:** This codebase is intended as a demonstration and is not fully functional. It represents only a subset of the services and features actually present in a production deployment, designed solely to illustrate the overall structure and workflow of the integration. For real-world use, significant additional development, configuration, and integration with external services would be required.
 
