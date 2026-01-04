@@ -1,0 +1,8 @@
+{
+  "name": "pdf-generator-service",
+  "version": "0.8.2",
+  "private": true,
+  "devDependencies": {
+    "@company/pdf-generator-lib": "0.9.2"
+  }
+}

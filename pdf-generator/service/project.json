@@ -1,0 +1,138 @@
+{
+  "name": "pdf-generator-service",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "projects/pdf-generator/service/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "outputs": ["{workspaceRoot}/dist/projects/pdf-generator/service"],
+      "options": {
+        "command": "webpack-cli build",
+        "args": ["--node-env=production"],
+        "cwd": "projects/pdf-generator/service"
+      },
+      "configurations": {
+        "development": {
+          "args": ["--node-env=development"]
+        },
+        "production": {}
+      }
+    },
+
+    "serve": {
+      "continuous": true,
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": [
+        "build",
+        {
+          "projects": ["pdf-environment"],
+          "target": "deploy-docker"
+        }
+      ],
+      "options": {
+        "buildTarget": "pdf-generator-service:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "pdf-generator-service:build:development"
+        },
+        "production": {
+          "buildTarget": "pdf-generator-service:build:production"
+        }
+      }
+    },
+
+    "deploy-docker-kube": {
+      "executor": "nx:run-commands",
+      "dependsOn": [
+        {
+          "projects": ["pdf-environment"],
+          "target": "deploy-docker"
+        },
+        "dockerize-script"
+      ],
+      "options": {
+        "parallel": false,
+        "cwd": "{projectRoot}",
+        "commands": [
+          "kubectl config use-context docker-desktop",
+          "kubectl create namespace microservices --dry-run=client -o yaml | kubectl apply -f -",
+          "VERSION=$(node -p \"require('./package.json').version\") && kubectl kustomize . | sed \"s/{{VERSION}}/${VERSION}/g\" | kubectl apply -f -"
+        ]
+      }
+    },
+    "undeploy-docker-kube": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "{projectRoot}",
+        "commands": [
+          "kubectl config use-context docker-desktop",
+          "kubectl delete -k ."
+        ]
+      }
+    },
+
+    "dockerize-script": {
+      "executor": "nx:run-commands"
+    }
+  },
+
+  "__diasabled_targets": {
+    "deploy-docker": {
+      "executor": "nx:run-commands",
+      "dependsOn": [
+        {
+          "projects": ["pdf-environment"],
+          "target": "deploy-docker"
+        },
+        "dockerize-local"
+      ],
+      "options": {
+        "commands": [
+          "docker compose -f {projectRoot}/docker-compose.yaml up -d"
+        ]
+      }
+    },
+    "undeploy-docker": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["docker compose -f {projectRoot}/docker-compose.yaml down"]
+      }
+    },
+    "dockerize-local": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "inputs": [
+        "production",
+        "{projectRoot}/Dockerfile",
+        "{workspaceRoot}/dist/projects/pdf-generator/service/*"
+      ],
+      "options": {
+        "parallel": false,
+        "commands": [
+          "docker build -f {projectRoot}/deployment/Dockerfile . -t pdf-generator-service:latest -t pdf-generator-service:$(node -p \"require('./{projectRoot}/package.json').version\")"
+        ]
+      }
+    },
+    "dockerize-gitlab": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "inputs": [
+        "production",
+        "{projectRoot}/Dockerfile",
+        "{workspaceRoot}/dist/projects/pdf-generator/service/*"
+      ],
+      "options": {
+        "parallel": false,
+        "commands": [
+          "docker build -f {projectRoot}/deployment/Dockerfile . -t registry.gitlab.com/innovateweb/company/tools/toolbox/pdf-generator-service:latest -t registry.gitlab.com/innovateweb/company/tools/toolbox/pdf-generator-service:$(node -p \"require('./{projectRoot}/package.json').version\")",
+          "docker push registry.gitlab.com/innovateweb/company/tools/toolbox/pdf-generator-service --all-tags"
+        ]
+      }
+    }
+  }
+}

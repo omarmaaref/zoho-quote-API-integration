@@ -1,0 +1,978 @@
+{
+  "document": {
+    "createdAt": "15.08.2025",
+    "dateOfDocumentVersion": "15.08.2024"
+  },
+  "StaticFileserver": "http://host.docker.internal:8080/generator",
+  "measureSheet": {
+    "name": "Material- und Absatzwirtschaft",
+    "number": "237/0654/2924",
+    "modules": [
+      [
+        {
+          "title": "Unternehmensführung und -organisation",
+          "durationInDays": 65,
+          "price": "4.284,80",
+          "durationInUE": 520,
+          "certificateId": "2023M101535-10001-631"
+        },
+        {
+          "title": "Unternehmensführung mit Vertiefung im Controlling",
+          "durationInDays": 70,
+          "price": "4.614,40",
+          "durationInUE": 560,
+          "certificateId": "2023M101535-10001-630"
+        },
+        {
+          "title": "Unternehmensführung mit Leadership und Kommunikation",
+          "durationInDays": 80,
+          "price": "5.273,60",
+          "durationInUE": 640,
+          "certificateId": "2023M101535-10001-629"
+        },
+        {
+          "title": "Unity - Berufe in der Programmierung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 10,
+          "price": "1.023,20",
+          "durationInUE": 80,
+          "certificateId": "2025M100328-358"
+        },
+        {
+          "title": "Strategisches Marketing Management - Projektarbeit - Berufe in Werbung und Marketing - komplexe Spezialistentätigkeiten",
+          "durationInDays": 5,
+          "price": "334,80",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-732"
+        },
+        {
+          "title": "Spezialist für Personalmarketing (m/w/d) mit Computergrundlagen und MS Office - Qualifizierung im Personalbereich",
+          "durationInDays": 130,
+          "price": "8.569,60",
+          "durationInUE": 1040,
+          "certificateId": "2023M101535-10001-626"
+        },
+        {
+          "title": "Social Media Marketing und E-Commerce",
+          "durationInDays": 30,
+          "price": "1.860,00",
+          "durationInUE": 240,
+          "certificateId": "2023M101535-10001-620"
+        },
+        {
+          "title": "Social Media Manager (m/w/d) - mit Spezialisierung E-Commerce",
+          "durationInDays": 105,
+          "price": "6.510,00",
+          "durationInUE": 840,
+          "certificateId": "2023M101535-10001-618"
+        },
+        {
+          "title": "Social Media Manager - Basic (m/w/d)",
+          "durationInDays": 80,
+          "price": "4.467,20",
+          "durationInUE": 640,
+          "certificateId": "2023M101535-10001-617"
+        },
+        {
+          "title": "Scrum PSM Level I & PSPO Level I (Externe Prüfung: Scrum.org) - Berufe in der IT-Koordination - komplexe Spezialistentätigkeiten",
+          "durationInDays": 20,
+          "price": "2.046,40",
+          "durationInUE": 160,
+          "certificateId": "2025M100328-192"
+        },
+        {
+          "title": "Qualitätsmanagement",
+          "durationInDays": 50,
+          "price": "4.900,00",
+          "durationInUE": 400,
+          "certificateId": "2023M101535-10001-613"
+        },
+        {
+          "title": "Prozessmanagement- Analyse und Verbesserung - Berufe in der technischen Produktionsplanung und -steuerung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 20,
+          "price": "2.116,80",
+          "durationInUE": 160,
+          "certificateId": "2025M100328-119"
+        },
+        {
+          "title": "Prozessmanagement - Allgemein - Berufe in der technischen Produktionsplanung und -steuerung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 30,
+          "price": "3.175,20",
+          "durationInUE": 240,
+          "certificateId": "2025M100328-117"
+        },
+        {
+          "title": "Projektmanager Personalmarketing (m/w/d) - PRINCE2® - Qualifizierung im Personalbereich",
+          "durationInDays": 180,
+          "price": "11.865,60",
+          "durationInUE": 1440,
+          "certificateId": "2023M101535-10001-602"
+        },
+        {
+          "title": "Projektmanagement, Moderation und Präsentation",
+          "durationInDays": 45,
+          "price": "3.204,00",
+          "durationInUE": 360,
+          "certificateId": "2023M101535-10001-253"
+        },
+        {
+          "title": "Projektmanagement Allgemein (klassisch und agil) im Bürobereich - Berufe in der kaufmännischen und technischen Betriebswirtschaft (ohne Spezialisierung) - komplexe Spezialistentätigkeiten",
+          "durationInDays": 20,
+          "price": "1.424,00",
+          "durationInUE": 160,
+          "certificateId": "2025M100328-440"
+        },
+        {
+          "title": "Projektmanagement - mit PRINCE2® - Qualifizierung im IT-Projektmanagement",
+          "durationInDays": 45,
+          "price": "2.966,40",
+          "durationInUE": 360,
+          "certificateId": "2023M101535-10001-598"
+        },
+        {
+          "title": "Projektarbeit HTML & CSS - Berufe in der Programmierung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 5,
+          "price": "511,60",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-370"
+        },
+        {
+          "title": "Programmieren mit Python und Projektmanagement, Scrum - Qualifizierung in der Software-Entwicklung",
+          "durationInDays": 60,
+          "price": "5.683,20",
+          "durationInUE": 480,
+          "certificateId": "2023M101535-10001-595"
+        },
+        {
+          "title": "Programmieren mit JavaScript",
+          "durationInDays": 60,
+          "price": "5.683,20",
+          "durationInUE": 480,
+          "certificateId": "2023M101535-10001-591"
+        }
+      ],
+      [
+        {
+          "title": "Professionelle Moderation und Präsentation - Qualifizierung im Bürobereich",
+          "durationInDays": 20,
+          "price": "1.052,80",
+          "durationInUE": 160,
+          "certificateId": "2023M101535-10001-586"
+        },
+        {
+          "title": "Professionell Präsentieren inkl. MS PowerPoint - Qualifizierung im Bürobereich",
+          "durationInDays": 25,
+          "price": "1.316,00",
+          "durationInUE": 200,
+          "certificateId": "2023M101535-10001-585"
+        },
+        {
+          "title": "Personalreferent (m/w/d) - für Quereinstieg mit Qualifikationsprojekt - Qualifizierung im Personalwesen",
+          "durationInDays": 220,
+          "price": "13.252,80",
+          "durationInUE": 1760,
+          "certificateId": "2023M101535-10001-542"
+        },
+        {
+          "title": "Personalreferent (m/w/d) - für Quereinstieg - Qualifizierung im Personalwesen",
+          "durationInDays": 215,
+          "price": "12.951,60",
+          "durationInUE": 1720,
+          "certificateId": "2023M101535-10001-541"
+        },
+        {
+          "title": "Online-Marketing-Grundlagen, Social Media Marketing und E-Commerce",
+          "durationInDays": 60,
+          "price": "3.350,40",
+          "durationInUE": 480,
+          "certificateId": "2023M101535-10001-584"
+        },
+        {
+          "title": "Online-Marketing-Grundlagen und E-Commerce",
+          "durationInDays": 45,
+          "price": "2.790,00",
+          "durationInUE": 360,
+          "certificateId": "2023M101535-10001-583"
+        },
+        {
+          "title": "Office Manager - Scrum PSM I und PSPO I (m/w/d)",
+          "durationInDays": 135,
+          "price": "8.899,20",
+          "durationInUE": 1080,
+          "certificateId": "2023M101535-10001-576"
+        },
+        {
+          "title": "Office Manager - PRINCE2® (m/w/d)",
+          "durationInDays": 135,
+          "price": "8.899,20",
+          "durationInUE": 1080,
+          "certificateId": "2023M101535-10001-575"
+        },
+        {
+          "title": "Office Management - mit MS Office für Fortgeschrittene",
+          "durationInDays": 65,
+          "price": "4.284,80",
+          "durationInUE": 520,
+          "certificateId": "2023M101535-10001-574"
+        },
+        {
+          "title": "Office Management - mit MS Office für Einsteiger",
+          "durationInDays": 85,
+          "price": "4.474,40",
+          "durationInUE": 680,
+          "certificateId": "2023M101535-10001-573"
+        },
+        {
+          "title": "Office 365 - Excel, Word, PowerPoint, cloudbasiertes Arbeiten",
+          "durationInDays": 25,
+          "price": "1.316,00",
+          "durationInUE": 200,
+          "certificateId": "2023M101535-10001-572"
+        },
+        {
+          "title": "MS-Office Word Basic - Büro- und Sekretariatskräfte (ohne Spezialisierung) - Helfer-/Anlerntätigkeiten",
+          "durationInDays": 5,
+          "price": "284,40",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-517"
+        },
+        {
+          "title": "MS-Office Word Advanced - Büro- und Sekretariatskräfte (ohne Spezialisierung) - fachlich ausgerichtete Tätigkeiten",
+          "durationInDays": 5,
+          "price": "284,40",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-541"
+        },
+        {
+          "title": "MS-Office Outlook - Büro- und Sekretariatskräfte (ohne Spezialisierung) - fachlich ausgerichtete Tätigkeiten",
+          "durationInDays": 5,
+          "price": "284,40",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-545"
+        },
+        {
+          "title": "MS-Office Excel Advanced - Büro- und Sekretariatskräfte (ohne Spezialisierung) - fachlich ausgerichtete Tätigkeiten",
+          "durationInDays": 5,
+          "price": "284,40",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-543"
+        },
+        {
+          "title": "Methodenkompetenz - Büro- und Sekretariatskräfte (ohne Spezialisierung) - fachlich ausgerichtete Tätigkeiten",
+          "durationInDays": 5,
+          "price": "284,40",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-544"
+        },
+        {
+          "title": "Marketing- / Kommunikatonsmanager (m/w/d)",
+          "durationInDays": 135,
+          "price": "8.370,00",
+          "durationInUE": 1080,
+          "certificateId": "2023M101535-10001-568"
+        },
+        {
+          "title": "Managementassistent - PRINCE2® (m/w/d)",
+          "durationInDays": 160,
+          "price": "8.422,40",
+          "durationInUE": 1280,
+          "certificateId": "2023M101535-10001-567"
+        },
+        {
+          "title": "Lohn- & Gehaltsbuchhaltung mit Lexware - Berufe in der Buchhaltung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 10,
+          "price": "709,60",
+          "durationInUE": 80,
+          "certificateId": "2025M100328-613"
+        },
+        {
+          "title": "Lohn- & Gehaltsbuchhaltung mit DATEV (Externe Prüfung: DATEV) - Berufe in der Buchhaltung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 15,
+          "price": "1.064,40",
+          "durationInUE": 120,
+          "certificateId": "2025M100328-612"
+        }
+      ],
+      [
+        {
+          "title": "Kreatives und innovatives Projektmanagement",
+          "durationInDays": 50,
+          "price": "3.296,00",
+          "durationInUE": 400,
+          "certificateId": "2023M101535-10001-251"
+        },
+        {
+          "title": "Kaufmännischer Mitarbeiter Einkauf / E-Commerce (m/w/d)",
+          "durationInDays": 185,
+          "price": "11.203,60",
+          "durationInUE": 1480,
+          "certificateId": "2023M101535-10001-186"
+        },
+        {
+          "title": "Kaufmännische Grundlagen und Finanzbuchhaltung für den E-Commerce / Online Shops",
+          "durationInDays": 65,
+          "price": "4.269,20",
+          "durationInUE": 520,
+          "certificateId": "2023M101535-10001-564"
+        },
+        {
+          "title": "IT-Servicemanagement",
+          "durationInDays": 15,
+          "price": "1.420,80",
+          "durationInUE": 120,
+          "certificateId": "2023M101535-10001-655"
+        },
+        {
+          "title": "IT-Projektmanager (m/w/d) - PRINCE2® und Scrum",
+          "durationInDays": 120,
+          "price": "11.366,40",
+          "durationInUE": 960,
+          "certificateId": "2023M101535-10001-558"
+        },
+        {
+          "title": "Internet- & Medienrecht - Berufe in Werbung und Marketing - fachlich ausgerichtete Tätigkeiten",
+          "durationInDays": 5,
+          "price": "301,60",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-635"
+        },
+        {
+          "title": "HTML & CSS - Berufe in der Programmierung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 20,
+          "price": "2.046,40",
+          "durationInUE": 160,
+          "certificateId": "2025M100328-359"
+        },
+        {
+          "title": "HR-Manager (m/w/d) - Qualifizierung im Personalwesen",
+          "durationInDays": 115,
+          "price": "7.580,80",
+          "durationInUE": 920,
+          "certificateId": "2023M101535-10001-556"
+        },
+        {
+          "title": "HR-Manager (m/w/d) - mit Schwerpunkt auf Data Science Konzepte - Qualifizierung im Personalwesen",
+          "durationInDays": 155,
+          "price": "10.217,60",
+          "durationInUE": 1240,
+          "certificateId": "2023M101535-10001-555"
+        },
+        {
+          "title": "HR-Manager (m/w/d) - mit Qualifikationsprojekt - Qualifizierung im Personalwesen",
+          "durationInDays": 120,
+          "price": "7.910,40",
+          "durationInUE": 960,
+          "certificateId": "2023M101535-10001-554"
+        },
+        {
+          "title": "HR-Manager (m/w/d) - mit Projektmanagement, Scrum - Qualifizierung im Personalwesen",
+          "durationInDays": 135,
+          "price": "8.899,20",
+          "durationInUE": 1080,
+          "certificateId": "2023M101535-10001-553"
+        },
+        {
+          "title": "HR-Manager (m/w/d) - mit Projektmanagement, PRINCE2® - Qualifizierung im Personalwesen",
+          "durationInDays": 135,
+          "price": "8.899,20",
+          "durationInUE": 1080,
+          "certificateId": "2023M101535-10001-552"
+        },
+        {
+          "title": "HR-Management mit einer Einführung in betriebswirtschaftliche Grundlagen - Qualifizierung im Personalwesen",
+          "durationInDays": 105,
+          "price": "6.325,20",
+          "durationInUE": 840,
+          "certificateId": "2023M101535-10001-551"
+        },
+        {
+          "title": "HR-Management für Einsteiger - mit Social Media Recruiting - Qualifizierung im Personalwesen",
+          "durationInDays": 120,
+          "price": "7.228,80",
+          "durationInUE": 960,
+          "certificateId": "2023M101535-10001-550"
+        },
+        {
+          "title": "HR- Management mit Vertiefung im Social Media Marketing / Recruiting - Qualifizierung im Personalwesen",
+          "durationInDays": 60,
+          "price": "3.955,20",
+          "durationInUE": 480,
+          "certificateId": "2023M101535-10001-549"
+        },
+        {
+          "title": "HR Management - Berufe in der Personalentwicklung und -sachbearbeitung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 40,
+          "price": "2.848,00",
+          "durationInUE": 320,
+          "certificateId": "2025M100328-576"
+        },
+        {
+          "title": "HR Data Analyst (m/w/d) - mit MS Office für Fortgeschrittene - Qualifizierung im Personalwesen",
+          "durationInDays": 290,
+          "price": "19.047,20",
+          "durationInUE": 2320,
+          "certificateId": "2023M101535-10001-547"
+        },
+        {
+          "title": "Grundlagen Computer, Windows und MS Office",
+          "durationInDays": 25,
+          "price": "1.316,00",
+          "durationInUE": 200,
+          "certificateId": "2023M101535-10001-546"
+        },
+        {
+          "title": "Für Einsteiger: Computer-, MS Office- und Marketing-Grundlagen - Qualifizierung im Marketing",
+          "durationInDays": 45,
+          "price": "2.512,80",
+          "durationInUE": 360,
+          "certificateId": "2023M101535-10001-545"
+        },
+        {
+          "title": "Führungskompetenz - Empathie & Motivation - Berufe in der Personalentwicklung und -sachbearbeitung - hoch komplexe Tätigkeiten",
+          "durationInDays": 10,
+          "price": "712,00",
+          "durationInUE": 80,
+          "certificateId": "2025M100328-586"
+        }
+      ],
+      [
+        {
+          "title": "Finanzbuchhaltung",
+          "durationInDays": 55,
+          "price": "3.612,40",
+          "durationInUE": 440,
+          "certificateId": "2023M101535-10001-543"
+        },
+        {
+          "title": "Finanzbuchhaltung mit Lexware - Berufe in der Buchhaltung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 10,
+          "price": "709,60",
+          "durationInUE": 80,
+          "certificateId": "2025M100328-616"
+        },
+        {
+          "title": "Finanzbuchhaltung mit DATEV (Externe Prüfung: DATEV) - Berufe in der Buchhaltung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 15,
+          "price": "1.064,40",
+          "durationInUE": 120,
+          "certificateId": "2025M100328-610"
+        },
+        {
+          "title": "Einsteigerkurs Computernutzung, MS Office 365 und Arbeiten in der Cloud Kompakt",
+          "durationInDays": 45,
+          "price": "2.368,80",
+          "durationInUE": 360,
+          "certificateId": "2023M101535-10001-540"
+        },
+        {
+          "title": "E-Commerce und Social Media Marketing mit Marketing-Grundlagen - Qualifizierung im E-Commerce",
+          "durationInDays": 40,
+          "price": "2.422,40",
+          "durationInUE": 320,
+          "certificateId": "2023M101535-10001-539"
+        },
+        {
+          "title": "E-Commerce und Buchhaltung Grundlagen - Qualifizierung im E-Commerce",
+          "durationInDays": 95,
+          "price": "5.753,20",
+          "durationInUE": 760,
+          "certificateId": "2023M101535-10001-538"
+        },
+        {
+          "title": "Digital Leader (m/w/d) - Qualifizierung in IT-Leitung",
+          "durationInDays": 155,
+          "price": "17.025,20",
+          "durationInUE": 1240,
+          "certificateId": "2023M101535-10001-536"
+        },
+        {
+          "title": "Digital Leader (m/w/d) - mit Projektmanagement, Scrum",
+          "durationInDays": 155,
+          "price": "17.025,20",
+          "durationInUE": 1240,
+          "certificateId": "2023M101535-10001-535"
+        },
+        {
+          "title": "Digital Business Modelling - Berufe im Controlling - hoch komplexe Tätigkeiten",
+          "durationInDays": 10,
+          "price": "709,60",
+          "durationInUE": 80,
+          "certificateId": "2025M100328-624"
+        },
+        {
+          "title": "Data Science in HR - mit SQL, Cloud Computing, Power BI und Tableau - Qualifizierung im Personalwesen",
+          "durationInDays": 150,
+          "price": "14.208,00",
+          "durationInUE": 1200,
+          "certificateId": "2023M101535-10001-516"
+        },
+        {
+          "title": "Data Science Basic im HR-Management - Qualifizierung im Personalwesen",
+          "durationInDays": 85,
+          "price": "5.603,20",
+          "durationInUE": 680,
+          "certificateId": "2023M101535-10001-509"
+        },
+        {
+          "title": "Data Science Basic für (angehende) Führungskräfte",
+          "durationInDays": 25,
+          "price": "1.648,00",
+          "durationInUE": 200,
+          "certificateId": "2023M101535-10001-507"
+        },
+        {
+          "title": "Community Management - Berufe in Werbung und Marketing - komplexe Spezialistentätigkeiten",
+          "durationInDays": 10,
+          "price": "669,60",
+          "durationInUE": 80,
+          "certificateId": "2025M100328-673"
+        },
+        {
+          "title": "Cloudbasiertes Arbeiten - Büro- und Sekretariatskräfte (ohne Spezialisierung) - komplexe Spezialistentätigkeiten",
+          "durationInDays": 5,
+          "price": "356,00",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-561"
+        },
+        {
+          "title": "Change- und Projektmanagement",
+          "durationInDays": 60,
+          "price": "3.955,20",
+          "durationInUE": 480,
+          "certificateId": "2023M101535-10001-498"
+        },
+        {
+          "title": "Change Manager (m/w/d) - Qualifizierung in Unternehmensführung",
+          "durationInDays": 125,
+          "price": "8.240,00",
+          "durationInUE": 1000,
+          "certificateId": "2023M101535-10001-497"
+        },
+        {
+          "title": "Change Manager (m/w/d) - mit Projektmanagement, PRINCE2® - Qualifizierung in Unternehmensführung",
+          "durationInDays": 145,
+          "price": "9.558,40",
+          "durationInUE": 1160,
+          "certificateId": "2023M101535-10001-496"
+        },
+        {
+          "title": "Change Leader (m/w/d) - Qualifizierung in Unternehmensführung",
+          "durationInDays": 80,
+          "price": "5.273,60",
+          "durationInUE": 640,
+          "certificateId": "2023M101535-10001-495"
+        },
+        {
+          "title": "Category Manager (m/w/d)",
+          "durationInDays": 190,
+          "price": "9.348,00",
+          "durationInUE": 1520,
+          "certificateId": "2023M101535-10001-491"
+        },
+        {
+          "title": "Category Manager (m/w/d) - mit Qualifikationsprojekt",
+          "durationInDays": 210,
+          "price": "10.332,00",
+          "durationInUE": 1680,
+          "certificateId": "2023M101535-10001-494"
+        }
+      ],
+      [
+        {
+          "title": "Category Manager (m/w/d) - mit Projektmanagement, PRINCE2®",
+          "durationInDays": 185,
+          "price": "9.102,00",
+          "durationInUE": 1480,
+          "certificateId": "2023M101535-10001-492"
+        },
+        {
+          "title": "Category Manager (m/w/d) - mit Projektmanagement, PRINCE2® und Qualifikationsprojekt",
+          "durationInDays": 205,
+          "price": "10.086,00",
+          "durationInUE": 1640,
+          "certificateId": "2023M101535-10001-493"
+        },
+        {
+          "title": "Business Prozessmitarbeiter (m/w/d) - mit Projektmanagement Qualifizierung im Prozessmanagement",
+          "durationInDays": 120,
+          "price": "10.675,20",
+          "durationInUE": 960,
+          "certificateId": "2023M101535-10001-490"
+        },
+        {
+          "title": "Business Manager (m/w/d)",
+          "durationInDays": 160,
+          "price": "10.547,20",
+          "durationInUE": 1280,
+          "certificateId": "2023M101535-10001-487"
+        },
+        {
+          "title": "Business Manager (m/w/d) - mit Projektmanagement, Scrum",
+          "durationInDays": 160,
+          "price": "10.547,20",
+          "durationInUE": 1280,
+          "certificateId": "2023M101535-10001-489"
+        },
+        {
+          "title": "Business Manager (m/w/d) - mit Projektmanagement, PRINCE2®",
+          "durationInDays": 140,
+          "price": "9.228,80",
+          "durationInUE": 1120,
+          "certificateId": "2023M101535-10001-488"
+        },
+        {
+          "title": "Business Management - Kompetenzen für die Geschäftsfeldentwicklung",
+          "durationInDays": 145,
+          "price": "9.558,40",
+          "durationInUE": 1160,
+          "certificateId": "2023M101535-10001-486"
+        },
+        {
+          "title": "Büroassistenz - Qualifizierung in Büro, Sekretariat",
+          "durationInDays": 65,
+          "price": "3.421,60",
+          "durationInUE": 520,
+          "certificateId": "2023M101535-10001-485"
+        },
+        {
+          "title": "Büro- und Projektassistent (m/w/d) - mit fortgeschrittenen MS Office-Kenntnissen - Qualifizierung in Büro, Sekretariat",
+          "durationInDays": 95,
+          "price": "5.000,80",
+          "durationInUE": 760,
+          "certificateId": "2023M101535-10001-220"
+        },
+        {
+          "title": "Büro- und Projektassistent (m/w/d) - für Quereinstieg - Qualifizierung in Büro, Sekretariat",
+          "durationInDays": 95,
+          "price": "5.000,80",
+          "durationInUE": 760,
+          "certificateId": "2023M101535-10001-218"
+        },
+        {
+          "title": "Augmented Reality; Virtual Reality & Mixed Reality - Berufe im Grafik-, Kommunikations- und Fotodesign - hoch komplexe Tätigkeiten",
+          "durationInDays": 40,
+          "price": "3.244,80",
+          "durationInUE": 320,
+          "certificateId": "2025M100328-72"
+        },
+        {
+          "title": "Arbeits- und Sozialrecht - Berufe in der Personalentwicklung und -sachbearbeitung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 5,
+          "price": "356,00",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-578"
+        },
+        {
+          "title": "Agiles Projektmanagement - mit Scrum - Qualifizierung im Projektmanagement",
+          "durationInDays": 45,
+          "price": "2.966,40",
+          "durationInUE": 360,
+          "certificateId": "2023M101535-10001-482"
+        },
+        {
+          "title": "Agile Projektmanager Personalmarketing (m/w/d) - mit Scrum",
+          "durationInDays": 145,
+          "price": "9.558,40",
+          "durationInUE": 1160,
+          "certificateId": "2023M101535-10001-479"
+        },
+        {
+          "title": "Agile Leadership - mit Scrum - Qualifizierung im IT-Projektmanagement",
+          "durationInDays": 65,
+          "price": "7.139,60",
+          "durationInUE": 520,
+          "certificateId": "2023M101535-10001-98"
+        },
+        {
+          "title": "Agile Leader (m/w/d) - mit Projektmanagement, Scrum - Qualifizierung im IT-Leitung",
+          "durationInDays": 100,
+          "price": "10.984,00",
+          "durationInUE": 800,
+          "certificateId": "2023M101535-10001-476"
+        },
+        {
+          "title": "Agile HR Data Analyst (m/w/d) - mit Projektmanagement, Scrum - Qualifizierung im Personalwesen",
+          "durationInDays": 290,
+          "price": "27.468,80",
+          "durationInUE": 2320,
+          "certificateId": "2023M101535-10001-473"
+        },
+        {
+          "title": "Agile Change Manager (m/w/d) - mit Scrum - Qualifizierung in Unternehmensführung",
+          "durationInDays": 145,
+          "price": "9.558,40",
+          "durationInUE": 1160,
+          "certificateId": "2023M101535-10001-464"
+        },
+        {
+          "title": "Agile Category Manager (m/w/d) - mit Scrum",
+          "durationInDays": 205,
+          "price": "10.086,00",
+          "durationInUE": 1640,
+          "certificateId": "2023M101535-10001-462"
+        },
+        {
+          "title": "Agile Category Manager (m/w/d) - mit Scrum und Qualifikationsprojekt",
+          "durationInDays": 210,
+          "price": "10.332,00",
+          "durationInUE": 1680,
+          "certificateId": "2023M101535-10001-463"
+        }
+      ],
+      [
+        {
+          "title": "Zeit- und Selbstmanagement - Büro- und Sekretariatskräfte (ohne Spezialisierung) - fachlich ausgerichtete Tätigkeiten",
+          "durationInDays": 5,
+          "price": "284,40",
+          "durationInUE": 40,
+          "certificateId": "2025M100328-540"
+        },
+        {
+          "title": "vue.js - Berufe in der Programmierung - komplexe Spezialistentätigkeiten",
+          "durationInDays": 10,
+          "price": "1.023,20",
+          "durationInUE": 80,
+          "certificateId": "2025M100328-352"
+        },
+        {
+          "title": "Virtueller Assistent - mit Schwerpunkt WordPress-Blogs, Online-Shops und Social Media (m/w/d) - Qualifizierung im Online-Marketing",
+          "durationInDays": 245,
+          "price": "15.190,00",
+          "durationInUE": 1960,
+          "certificateId": "2023M101535-10001-216"
+        },
+        {
+          "title": "Virtueller Assistent - mit Schwerpunkt Lohn- und Gehaltsbuchhaltung (m/w/d)",
+          "durationInDays": 135,
+          "price": "8.866,80",
+          "durationInUE": 1080,
+          "certificateId": "2023M101535-10001-638"
+        },
+        {
+          "title": "Virtueller Assistent - mit Schwerpunkt Finanzbuchhaltung (m/w/d)",
+          "durationInDays": 145,
+          "price": "9.523,60",
+          "durationInUE": 1160,
+          "certificateId": "2023M101535-10001-637"
+        },
+        {
+          "title": "Virtueller Assistent - mit Schwerpunkt Büro- und Projektassistenz (m/w/d) - Qualifizierung in Büro, Sekretariat",
+          "durationInDays": 125,
+          "price": "6.580,00",
+          "durationInUE": 1000,
+          "certificateId": "2023M101535-10001-636"
+        },
+        {
+          "title": "Vertriebsmanagement - Berufe im Vertrieb (außer Informations- und Kommunikationstechnologien) - komplexe Spezialistentätigkeiten",
+          "durationInDays": 20,
+          "price": "1.393,60",
+          "durationInUE": 160,
+          "certificateId": "2025M100328-405"
+        }
+      ]
+    ]
+  },
+  "courseContent": [
+    {
+      "courseName": "Python32",
+      "courseContentWithTU": [
+        "Einführung: Algorithmen und Python-Grundlagen (6UE)",
+        "Syntax und Semantik (6UE)",
+        "Variablen und Zuweisungen (6UE)",
+        "Datentypen: Ganzzahlen, Gleitkommazahlen, komplexe Zahlen (8UE)",
+        "Entwicklungsumgebungen: IDLE und Thonny (8UE)",
+        "Listen und ihre Methoden (8UE)",
+        "Mengen (set) und Dictionaries (8UE)",
+        "Zeichenketten (str) und ihre Operationen (8UE)",
+        "Boolesche Werte und logische Operatoren (6UE)",
+        "Tupel und ihre Verwendung (6UE)",
+        "Schleifen: for und while (10UE)",
+        "Break und Continue in Schleifen (4UE)",
+        "Parameter und Rückgabewerte (8UE)",
+        "Kontrollstrukturen: if, else, elif (10UE)",
+        "Funktionen definieren und aufrufen (10UE)",
+        "Anonyme Funktionen mit Lambda (8UE)",
+        "Mathematische Funktionen: math und random (8UE)",
+        "Zeitmodule: datetime und time (8UE)",
+        "Module importieren und nutzen (8UE)",
+        "Fehlerbehandlung mit try und except (8UE)",
+        "Dateiverarbeitung: Öffnen, Lesen, Schreiben (10UE)",
+        "GUI-Entwicklung mit tkinter (12UE)",
+        "Zugriff auf die Systemumgebung mit os (6UE)",
+        "Reguläre Ausdrücke: Muster und Anwendung (10UE)",
+        "JSON-Daten speichern und laden (8UE)",
+        "Widgets und Eventhandling (8UE)",
+        "Einführung in OOP (Klassen und Objekte) (10UE)",
+        "Methoden und Vererbung (10UE)",
+        "Grafikprogrammierung mit PIL (8UE)",
+        "Debugging und Fehlersuche (6UE)"
+      ]
+    },
+    {
+      "courseName": "C",
+      "courseContentWithTU": [
+        "Struktur von C-Programmen (12UE)",
+        "Datentypen, Konstanten und Variablen (12UE)",
+        "Verwendung von Funktionen (16UE)",
+        "Operatoren (10UE)",
+        "Kontrollstrukturen (10UE)",
+        "Symbolische Konstanten und Makros (8UE)",
+        "Vektoren und Strings (12UE)",
+        "Speicherklassen (16UE)",
+        "Bit-Manipulationen (10UE)",
+        "Zeiger (8UE)",
+        "Strukturen und Datenzusammenfassung (6UE)",
+        "Dynamische Speicherplatzverwaltung (8UE)",
+        "Strukturierte Datentypen (8UE)",
+        "High-Level- und Low-Level-Dateizugriff (8UE)",
+        "Dialoge (8UE)",
+        "Verkettete Listen (8UE)"
+      ]
+    },
+    {
+      "courseName": "C++",
+      "courseContentWithTU": [
+        "Einführung: Eigenschaften, Verarbeitung, Unterschiede zu C und IDE-Setup (10UE)",
+        "Klassen und Konstruktoren in C++ (8UE)",
+        "Templates (8UE)",
+        "Container (8UE)",
+        "File-Input und -Output und Operator-Overloading (6UE)",
+        "Type-Casting für Klassen und in Klassenhierarchien (8UE)",
+        "Vererbung (10UE)",
+        "Abstrakte Klassen (6UE)",
+        "Polymorphe Klassen (6UE)",
+        "Smart Pointer (10UE)",
+        "Speicherreservierung (10UE)",
+        "Variadische Templates (6UE)",
+        "Concepts (6UE)",
+        "Assoziative Container (8UE)",
+        "Algorithmen der Standardbibliothek (10UE)",
+        "Multithreading (10UE)",
+        "Vertiefung von Multithreading (10UE)",
+        "Exception-Handling (8UE)",
+        "Wahlfreier Dateizugriff (6UE)",
+        "Dateisysteme (6UE)"
+      ]
+    },
+    {
+      "courseName": "Projektarbeit C++",
+      "courseContentWithTU": ["Qualifikationsprojekt C++ (40UE)"]
+    },
+    {
+      "courseName": "GitHub/GitLab",
+      "courseContentWithTU": [
+        "Versionsverwaltung (8UE)",
+        "Operationen der Versionsverwaltung (8UE)",
+        "Agiles Arbeiten mit Git (8UE)",
+        "Continuous Integration und Continuous Delivery (8UE)",
+        "Software Testing und Qualitätssicherung (8UE)"
+      ]
+    },
+    {
+      "courseName": "DevOps Foundation",
+      "courseContentWithTU": [
+        "Die drei Wege in DevOps (8UE)",
+        "Anwendung von Conways Gesetz (6UE)",
+        "Continuous Integration und automatisiertes Testen (6UE)",
+        "Release-Automatisierung und Risikoreduktion (10UE)",
+        "Continuous Delivery und Continuous Integration (10UE)",
+        "Telemetriedaten und A/B-Tests (8UE)",
+        "Review- und Koordinationsprozesse (6UE)",
+        "Information Security  (12UE)",
+        "Continuous Security (6UE)",
+        "Deployment Pipeline (8UE)"
+      ]
+    },
+
+    {
+      "courseName": "AI-Development",
+      "courseContentWithTU": [
+        "Bilddaten auswerten: Menschen und Hunde (6UE)",
+        "Das XOR-Problem und seine Bedeutung (6UE)",
+        "Mit etikettierten Daten lernen (6UE)",
+        "Moderne künstliche neuronale Netze (6UE)",
+        "Neuronale Netze und KI (6UE)",
+        "Backpropagation und verborgene Knoten (6UE)",
+        "Lernfähiges Vorhersageprogramm (UE)",
+        "Bilder auswerten und Ziffern erkennen (z. B. mit NumPy) (6UE)",
+        "Bilder vorbereiten mit der Python Imaging Library (PIL) (UE)",
+        "Aktivierungsfunktionen (z. B. Sigmoid) (6UE)",
+        "Daten klassifizieren: Wie lernt ein Computer, Objekte zu erkennen (4UE)",
+        "Einfache Vorhersagen – Lineare Regression (4UE)",
+        "Lernen durch Beobachtung (4UE)",
+        "Daten visualisieren und professionell auswerten (4UE)"
+      ]
+    },
+    {
+      "courseName": "Projektarbeit AI-Development",
+      "courseContentWithTU": ["Qualifikationsprojekt AI-Development (40UE)"]
+    },
+    {
+      "courseName": "Machine Learning",
+      "courseContentWithTU": [
+        "Einführung in Machine Learning (8UE)",
+        "Terminologie und Notation (6UE)",
+        "Entwicklung eines Machine-Learning-Systems (10UE)",
+        "Datenvorbereitung für Machine Learning (8UE)",
+        "Arten des Machine Learning (8UE)",
+        "Bewertung von Modellen (8UE)",
+        "Einführung in Python für Machine Learning (8UE)",
+        "Installation von Python-Paketen (6UE)",
+        "Verwendung von Scikit-Learn für Klassifikationen (8UE)",
+        "Training und Auswahl eines Vorhersagemodells (6UE)",
+        "K-Nearest Neighbors Algorithmus (8UE)",
+        "Gradientenabstiegsverfahren (8UE)",
+        "Adaptive lineare Neuronen (8UE)",
+        "Random Forests und Entscheidungsbäume (8UE)",
+        "Perzeptron-Algorithmen für Klassifikation (8UE)",
+        "Verarbeitung fehlender Daten (10UE)",
+        "Ensemble Learning (z. B. Bagging und Boosting) (8UE)",
+        "Modellbewertung und Hyperparameter-Tuning (8UE)",
+        "Dimensionalitätsreduktion (10UE)",
+        "Clustering-Verfahren (z. B. k-Means) (8UE)"
+      ]
+    },
+    {
+      "courseName": "Projektarbeit Machine Learning",
+      "courseContentWithTU": [
+        "Vergleich von drei gängigen Klassifizierungsalgorithmen (8UE)",
+        "Vorbereitung und Transformation der Daten durch One-Hot Encoding und Standardisierun (8UE)",
+        "Evaluation der Modellgenauigkeit durch Messung der Accuracy und Analyse der Confusion Matrix für jeden Algorithmus. (8UE)",
+        "Untersuchung der Hyperparameter zur Verbesserung der Performance der Algorithmen (8UE)",
+        "Erstellung einer umfassenden Projektpräsentation (8UE)"
+      ]
+    }
+  ],
+  "otherLearningContent": [
+    {
+      "courseName": "Self-Empowerment",
+      "courseContentWithTU": [
+        "Seelische Widerstandsfähigkeit und Anpassungskompetenz",
+        "Resilienzfaktoren im Detail",
+        "Die 4 Phasen des Lernens - Wissensaneignung und persönliche Entwicklung",
+        "Meine persönlichen Werte und Ziele",
+        "Persönliche Zielplanung",
+        "Lern- und Berufsalltag strukturieren",
+        "Pareto Prinzip und Eisenhower Matrix",
+        "“Getting Things Done” GTD",
+        "ALPEN Methode, Pomodoro Technik, ABC-Methode",
+        "Gesundheit und Entspannungstechniken",
+        "Stressmanagement"
+      ]
+    },
+    {
+      "courseName": "Bewerbercoaching",
+      "courseContentWithTU": [
+        "Smarte, sinnvolle und erfolgreiche Stellensuche",
+        "Digitale Stellensuche",
+        "Anschreiben in Bestform",
+        "Lebenslauf, Unterlagen etc. In Bestform",
+        "Vorbereitung auf Bewerbungsgespräche",
+        "Bewerbungsgespräche erfolgreich führen",
+        "Zusage, Absage, Entscheidung",
+        "Strukturierung der Bewerbungsaktivitäten",
+        "Absagen in neue Energie umwandeln",
+        "Erfolgreicher Start ins Unternehmen"
+      ]
+    }
+  ]
+}

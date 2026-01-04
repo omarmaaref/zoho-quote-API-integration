@@ -1,0 +1,13 @@
+{
+  "period": "18. Juni 2025 - 18. Juni 2025",
+  "logs": [
+    {
+      "datetime": "04.02.2025, 08:02:35",
+      "message": "Nutzeranmeldung fehlgeschlagen (max.mustermann)"
+    },
+    {
+      "datetime": "04.02.2025, 08:02:35",
+      "message": "Nutzeranmeldung fehlgeschlagen (max.mustermann)"
+    }
+  ]
+}

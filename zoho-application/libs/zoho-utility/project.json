@@ -1,0 +1,9 @@
+{
+  "name": "zoho-utility-lib",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "projects/zoho-application/libs/zoho-utility/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project zoho-utility-lib --web",
+  "targets": {}
+}

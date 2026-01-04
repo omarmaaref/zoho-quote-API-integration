@@ -1,0 +1,351 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Angebot - Kostenträger | company | 1.0</title>
+    <link rel='stylesheet' href='{{StaticFileserver}}/quote/styles.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+  </head>
+  <body>
+    <div class='page-header page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Logo.svg'
+        width='180px'
+        height='auto'
+      />
+    </div>
+    <div class='page-footer page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Welle_primaer.jpg'
+        width='100%'
+        height='100%'
+      />
+      <div class='legal-information'>
+        company GmbH<br />
+        Geschäftsführung:<br />
+        Alexandra Ingwersen, Christoph Jordan<br />
+        USt.-ID: DE 344613488<br />
+        Amtsgericht Hannover, HRB 228435<br />
+      </div>
+      <div class='bank-information'>
+        Bank: Deutsche Bank<br />IBAN: DE40 8607 0000 0016 7049 00<br />BIC:
+        DEUTDE8LXXX<br />
+        Stand des Dokumentes:
+        {{dateOfDocumentVersion}}<br />
+      </div>
+    </div>
+    <div class='wrapper'>
+      <table>
+        <thead>
+          <tr>
+            <td><div class='page-header-space'>&nbsp;</div></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='page-content'>
+              <div class='header-line'></div>
+              <div class='document-header'>
+                <div class='client-address'>
+                  {{client.salutation}}
+                  {{client.firstName}}
+                  {{client.lastName}}<br />E-Mail:
+                  {{client.email}}
+                </div>
+                <div class='company-info'>
+                  Philipsbornstraße 2,<br />30165 Hannover<br />Telefon: 0800
+                  8070602<br />E-Mail: beratung@company.de<br />Web:
+                  www.company.de
+                </div>
+              </div>
+              <div class='greeting'>
+                Liebe/r
+                {{client.firstName}}
+                {{client.lastName}},<br /><br />Für Ihr Interesse an unseren
+                geförderten Weiterbildungen danken wir Ihnen. Basierend auf
+                unserem Beratungs- und Eignungsfeststellungsgespräch, empfehlen
+                wir Ihnen die folgende Weiterbildung:
+              </div>
+              <table class='offer-table'>
+                <tr>
+                  <th>Angebotsnummer</th>
+                  <td>{{quote.number}}</td>
+                </tr>
+                <tr>
+                  <th>Angebotsdatum</th>
+                  <td>Hannover, {{quote.date}}</td>
+                </tr>
+                {{#if payer.name}}
+                  <tr>
+                    <th>Name des Kostenträgers</th>
+                    <td>{{payer.name}}</td>
+                  </tr>
+                {{/if}}
+                <tr>
+                  <th>Jobbezeichnung</th>
+                  <td>{{product.degreeDesignation}}</td>
+                </tr>
+                <tr>
+                  <th>Maßnahmenummer</th>
+                  <td>
+                    {{#if
+                      measureSheet.number
+                    }}{{measureSheet.number}}{{else}}Wird beantragt{{/if}}
+                  </td>
+                </tr>
+                <tr>
+                  <th>Dauer der Weiterbildung</th>
+                  <td>{{quote.startDate}} - {{quote.endDate}}</td>
+                </tr>
+                <tr>
+                  <th>Unterrichtsdauer</th>
+                  <td>
+                    {{quote.durationInMonths}}
+                    Monate /
+                    {{quote.durationInWeeks}}
+                    Wochen
+                  </td>
+                </tr>
+                <tr>
+                  <th>Unterrichtseinheiten (UE)</th>
+                  <td>{{quote.totalTeachingUnits}} UE</td>
+                </tr>
+                <tr>
+                  <th>Weiterbildungskosten</th>
+                  <td>{{quote.totalPrice}}</td>
+                </tr>
+                <tr>
+                  <th>Durchschnittskosten je UE</th>
+                  <td>{{quote.totalPricePerUnit}}</td>
+                </tr>
+                <tr>
+                  <th>Durchführungsform</th>
+                  <td>{{quote.learningMethod}}</td>
+                </tr>
+                <tr>
+                  <th>Unterrichtsform</th>
+                  <td>
+                    {{quote.teachingMethod}}
+                    ({{quote.teachingUnitsPerDay}}
+                    UE pro Tag)
+                  </td>
+                </tr>
+                <tr>
+                  <th>Gültigkeit dieses Angebotes</th>
+                  <td>{{quote.dueDate}}</td>
+                </tr>
+                <tr>
+                  <th>Modulliste</th>
+                  <td>Siehe unter Punkt 5</td>
+                </tr>
+                {{#if quote.additionalAgreement}}
+                  <tr>
+                    <th>Zusatzvereinbarung</th>
+                    <td>{{quote.additionalAgreement}}</td>
+                  </tr>
+                {{/if}}
+              </table>
+              <div style='page-break-before: always; padding-top: 40px'></div>
+              <div class='section-title'>{{sectionTitle
+                  'Arbeitsmarktliche Relevanz'
+                }}</div>
+              <p class='section-content'>{{product.labourMarketRelevance}}</p>
+              <div class='section-title'>
+                {{sectionTitle
+                  'Persönliche Relevanz der angebotenen Weiterbildung'
+                }}
+              </div>
+              <div>
+                {{#each quote.justification}}
+                  <p class='section-content'>{{this}}</p>
+                {{/each}}
+              </div>
+              <div style='page-break-before: always; padding-top: 40px'>
+                {{#if quote.isB2B}}{{else}}
+                  <div class='section-title'>
+                    {{sectionTitle
+                      'Unterstützung bei der beruflichen Integration'
+                    }}
+                  </div>
+                  <div class='section-content'>
+                    Die Weiterbildungsangebote der company sind eng mit den
+                    Anforderungen des Arbeitsmarktes verknüpft. Ein zentrales
+                    Element bildet dabei die aktive und begleitende
+                    Unterstützung bei der Vermittlung in eine passende
+                    Beschäftigung.<br /><br />Zu diesem Zweck kooperieren wir
+                    mit bundesweit organisierten Personalvermittlungen, die
+                    gleichzeitig auf ihre regionalen Einheiten zurückgreifen. So
+                    steht unseren Teilnehmenden ein deutschlandweites Netzwerk
+                    mit über 1.000 erfahrenen Unternehmen zur Verfügung, das den
+                    Einstieg in eine geeignete berufliche Tätigkeit erheblich
+                    erleichtert.<br /><br />Ergänzend dazu verfügt company über
+                    ein eigenes Netzwerk aus mittelständischen und größeren
+                    Betrieben sowie regional verwurzelten Unternehmen, die ihren
+                    Personalbedarf gezielt über uns decken möchten.vermitteln.<br
+                    /><br />Durch den regelmäßigen Austausch mit
+                    Personalverantwortlichen kennen wir die branchenspezifischen
+                    Strukturen und Anforderungen genau. Diese enge
+                    Zusammenarbeit ermöglicht es uns, unsere Teilnehmenden
+                    bereits während der Weiterbildung individuell und
+                    zielgerichtet bei der beruflichen Integration zu
+                    unterstützen.
+                  </div>
+                {{/if}}
+                <div class='section-title'>{{sectionTitle
+                    'Lernkonzept und Plattform'
+                  }}</div>
+                <div class='section-content'>
+                  Wir laden Sie herzlich zu unserer kostenfreien und
+                  unverbindlichen Info-Veranstaltung ein, um unser Lernkonzept
+                  und -plattform kennenzulernen:
+                </div>
+                <div class='qr-section'>
+                  <div class='qr-placeholder'>
+                    <img
+                      src='{{StaticFileserver}}/common/images/company_QR-Code_homepage.svg'
+                      alt='Zeit Icon'
+                    />
+                  </div>
+                  <div class='section-content'>
+                    Weitere Informationen dazu finden Sie auch auf unserer
+                    Webseite<br />www.company.de
+                  </div>
+                </div>
+              </div>
+              <div style='page-break-before: always; padding-top: 40px'>
+                <div class='section-title'>{{sectionTitle
+                    'Liste der Maßnahmemodule'
+                  }}</div>
+                <div
+                  style='
+                              margin: 20px 0;
+                              border-bottom: 2px solid #97c73c;
+                              width: 50px;
+                           '
+                ></div>
+                <div class='sub-title'>
+                  <span>Maßnahmenummer:
+                    {{#if
+                      measureSheet.number
+                    }}{{measureSheet.number}}{{else}}wird beantragt{{/if}}</span>
+                </div>
+                <table class='modules-table'>
+                  <thead>
+                    <tr>
+                      <th class='number-col'>Modulnr.</th>
+                      <th>Modulbezeichnung</th>
+                      <th class='units-col'>Anzahl UE</th>
+                      <th class='units-col'>Anzahl UT</th>
+                      <th class='price-col'>Preis in €</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{#each measureSheet.modules}}
+                      <tr>
+                        <td class='number-col'>
+                          {{#if this.number}}{{this.number}}{{else}}wird
+                            beantragt{{/if}}
+                        </td>
+                        <td>{{this.title}}</td>
+                        <td class='units-col'>{{this.teachingUnits}}</td>
+                        <td class='units-col'>{{this.teachingDays}}</td>
+                        <td class='price-col'>{{this.price}}</td>
+                      </tr>
+                    {{/each}}
+                  </tbody>
+                </table>
+                <div class='section-title'>{{sectionTitle
+                    'Fachliche Voraussetzungen'
+                  }}</div>
+                {{#if quote.missingRequiredCourses}}
+                  <p class='section-content'>
+                    Abgeschlossene Ausbildung oder Studium oder mindestens drei
+                    Jahre Berufserfahrung mit nachweisbarer Expertise in allen
+                    folgenden Bereichen:
+                    {{quote.missingRequiredCourses}}
+                  </p>
+                {{else}}
+                  <p class='section-content'>
+                    Abgeschlossene Ausbildung oder Studium oder mindestens drei
+                    Jahre Berufserfahrung mit nachweisbarer Expertise.
+                  </p>
+                {{/if}}
+              </div>
+              <div
+                class='page-break'
+                style='page-break-before: always; padding-top: 0'
+              >
+                <div class='section-title'>{{sectionTitle 'Themenplan'}}</div>
+                <div class='section-content'>
+                  {{#if learningPlan}}
+                    <div class='topic-plan'>
+                      {{#each learningPlan}}
+                        <div>
+                          <div
+                            class='subsection-title'
+                          >{{this.courseName}}</div>
+                          <ul>
+                            {{#each this.courseContentWithTU}}
+                              <li
+                                class='learning-plan-bullet-list'
+                              >{{this}}</li>
+                            {{/each}}
+                          </ul>
+                        </div>
+                      {{/each}}
+                    </div>
+                  {{else}}
+                    <div
+                      style='
+                                 height: 400px;
+                                 display: flex;
+                                 align-items: center;
+                                 justify-content: center;
+                                 color: #ccc;
+                                 font-style: italic;
+                              '
+                    >
+                      Individueller Themenplan wird hier eingefügt
+                    </div>
+                  {{/if}}
+                </div>
+                {{#if otherLearningContent}}
+                  <div>
+                    <div class='section-title'>Begleitende Lerninhalte</div>
+                    <div class='section-content'>
+                      <div class='topic-plan'>
+                        {{#each otherLearningContent}}
+                          <div>
+                            <div
+                              class='subsection-title'
+                            >{{this.courseName}}</div>
+                            <ul>
+                              {{#each this.courseContentWithTU}}
+                                <li
+                                  class='learning-plan-bullet-list'
+                                >{{this}}</li>
+                              {{/each}}
+                            </ul>
+                          </div>
+                        {{/each}}
+                      </div>
+                    </div>
+                  </div>
+                {{/if}}
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><div class='page-footer-space'>&nbsp;</div></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

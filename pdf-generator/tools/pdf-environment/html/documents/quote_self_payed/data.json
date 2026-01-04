@@ -1,0 +1,264 @@
+{
+  "dateOfDocumentVersion": "16.7.2025",
+  "StaticFileserver": "http://host.docker.internal:8080/generator",
+  "client": {
+    "email": "tollner-morlong@noemail.invalid",
+    "firstName": "Mi",
+    "lastName": "3",
+    "salutation": "Frau"
+  },
+  "measureSheet": {
+    "number": "237/0654/2924",
+    "modules": [
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      }
+    ]
+  },
+  "payer": {
+    "name": "Morlong Associates (Sample)"
+  },
+  "product": {
+    "title": "Perception Software Engineer (m/w/d)",
+    "degreeDesignation": "Perception Software Engineer (m/w/d)",
+    "labourMarketRelevance": [
+      "Die Weiterbildung zur Perception Software Engineerin adressiert den steigenden Bedarf an spezialisierten Fachkräften im Bereich Künstliche Intelligenz und autonomer Systeme. Der aktuelle Arbeitsmarkt erfordert zunehmend Expertinnen, die in der Lage sind, Wahrnehmungsmodelle für Maschinen zu entwickeln und zu optimieren. Durch die Vermittlung von Kompetenzen in Sensorfusion, maschinellem Lernen und bildverarbeitenden Technologien kann die Interessentin in innovativen Branchen wie autonomem Fahren oder fortgeschrittener Robotik Fuß fassen. Dadurch kann die Interessentin zur technologischen Weiterentwicklung beitragen und den Unternehmen helfen, neue Entwicklungen effizient zu integrieren."
+    ]
+  },
+  "quote": {
+    "missingRequiredCourses": null,
+    "additionalAgreement": null,
+    "startDate": "14.7.2025",
+    "endDate": "20.2.2026",
+    "durationInWeeks": 30,
+    "learningMethod": "online",
+    "totalPrice": "1.000,00 €",
+    "totalPricePerUnit": "12,79 €",
+    "date": "16.7.2025",
+    "dueDate": "15.8.2025",
+    "number": "11-07-2025-25340",
+    "teachingMethod": "Vollzeit",
+    "startDateBefore14days": "true",
+    "teachingUnitsPerDay": 8,
+    "totalTeachingUnits": 1200,
+    "paymentCount": 2,
+    "Sub_Total": "11,731 €",
+    "Grand_Total": "10,854 €",
+    "Tax": "450 €",
+    "discount": "1,200 €",
+    "discountPercentage": "10%",
+    "paymentTerms": "Zahlbar innerhalb von 14 Tagen bzw. bis spätestens zum Startzeitpunkt, sofern dieser in weniger als 14 Tagen nach Angebotsannahme erfolgt.",
+    "justification": [
+      "Während des Beratungsgesprächs wurde festgestellt, dass die Interessentin als Juristin in der Immobilienbranche tätig ist und über einen Masterabschluss in Rechtswissenschaften verfügt, mit einem ausgeprägten Interesse an Arbeitsrecht und HR Management. Diese beruflichen Interessen und Erfahrungen im rechtlichen Bereich legen nahe, dass die Interessentin strukturiertes Denken und analytische Fähigkeiten besitzt, die wesentlich sind für die Herausforderungen im Bereich der künstlichen Intelligenz. Die Weiterbildung zur Perception Software Engineerin knüpft an diese analytischen Fähigkeiten an und vertieft sie durch die Vermittlung von Kompetenzen in komplexen Bereichen wie maschinellem Lernen und innovativen Algorithmen.",
+      "Durch die Weiterbildung werden neue Kompetenzen in Programmierung und KI-Entwicklung vermittelt, die das Profil der Interessentin erweitern und sie auf zukünftige, technologisch anspruchsvolle Aufgaben vorbereiten. Solche Kenntnisse versetzen sie in die Lage, bedeutende Beiträge in Branchen wie der autonomen Robotik zu leisten. Der aktuelle Arbeitsmarkt benötigt dringend Expertinnen, die in der Lage sind, Wahrnehmungsmodelle zu entwickeln, um die technologische Weiterentwicklung in Bereichen wie autonomes Fahren zu fördern."
+    ]
+  },
+  "learningPlan": [
+    {
+      "courseName": "Python3",
+      "courseContent": [
+        "Einführung: Algorithmen und Python-Grundlagen (6UE)",
+        "Syntax und Semantik (6UE)",
+        "Variablen und Zuweisungen (6UE)",
+        "Datentypen: Ganzzahlen, Gleitkommazahlen, komplexe Zahlen (8UE)",
+        "Entwicklungsumgebungen: IDLE und Thonny (8UE)",
+        "Listen und ihre Methoden (8UE)",
+        "Mengen (set) und Dictionaries (8UE)",
+        "Zeichenketten (str) und ihre Operationen (8UE)",
+        "Boolesche Werte und logische Operatoren (6UE)",
+        "Tupel und ihre Verwendung (6UE)",
+        "Schleifen: for und while (10UE)",
+        "Break und Continue in Schleifen (4UE)",
+        "Parameter und Rückgabewerte (8UE)",
+        "Kontrollstrukturen: if, else, elif (10UE)",
+        "Funktionen definieren und aufrufen (10UE)",
+        "Anonyme Funktionen mit Lambda (8UE)",
+        "Mathematische Funktionen: math und random (8UE)",
+        "Zeitmodule: datetime und time (8UE)",
+        "Module importieren und nutzen (8UE)",
+        "Fehlerbehandlung mit try und except (8UE)",
+        "Dateiverarbeitung: Öffnen, Lesen, Schreiben (10UE)",
+        "GUI-Entwicklung mit tkinter (12UE)",
+        "Zugriff auf die Systemumgebung mit os (6UE)",
+        "Reguläre Ausdrücke: Muster und Anwendung (10UE)",
+        "JSON-Daten speichern und laden (8UE)",
+        "Widgets und Eventhandling (8UE)",
+        "Einführung in OOP (Klassen und Objekte) (10UE)",
+        "Methoden und Vererbung (10UE)",
+        "Grafikprogrammierung mit PIL (8UE)",
+        "Debugging und Fehlersuche (6UE)"
+      ]
+    },
+    {
+      "courseName": "C",
+      "courseContent": [
+        "Struktur von C-Programmen (12UE)",
+        "Datentypen, Konstanten und Variablen (12UE)",
+        "Verwendung von Funktionen (16UE)",
+        "Operatoren (10UE)",
+        "Kontrollstrukturen (10UE)",
+        "Symbolische Konstanten und Makros (8UE)",
+        "Vektoren und Strings (12UE)",
+        "Speicherklassen (16UE)",
+        "Bit-Manipulationen (10UE)",
+        "Zeiger (8UE)",
+        "Strukturen und Datenzusammenfassung (6UE)",
+        "Dynamische Speicherplatzverwaltung (8UE)",
+        "Strukturierte Datentypen (8UE)",
+        "High-Level- und Low-Level-Dateizugriff (8UE)",
+        "Dialoge (8UE)",
+        "Verkettete Listen (8UE)"
+      ]
+    },
+    {
+      "courseName": "C++",
+      "courseContent": [
+        "Einführung: Eigenschaften, Verarbeitung, Unterschiede zu C und IDE-Setup (10UE)",
+        "Klassen und Konstruktoren in C++ (8UE)",
+        "Templates (8UE)",
+        "Container (8UE)",
+        "File-Input und -Output und Operator-Overloading (6UE)",
+        "Type-Casting für Klassen und in Klassenhierarchien (8UE)",
+        "Vererbung (10UE)",
+        "Abstrakte Klassen (6UE)",
+        "Polymorphe Klassen (6UE)",
+        "Smart Pointer (10UE)",
+        "Speicherreservierung (10UE)",
+        "Variadische Templates (6UE)",
+        "Concepts (6UE)",
+        "Assoziative Container (8UE)",
+        "Algorithmen der Standardbibliothek (10UE)",
+        "Multithreading (10UE)",
+        "Vertiefung von Multithreading (10UE)",
+        "Exception-Handling (8UE)",
+        "Wahlfreier Dateizugriff (6UE)",
+        "Dateisysteme (6UE)"
+      ]
+    },
+    {
+      "courseName": "Projektarbeit C++",
+      "courseContent": ["Qualifikationsprojekt C++ (40UE)"]
+    },
+    {
+      "courseName": "GitHub/GitLab",
+      "courseContent": [
+        "Versionsverwaltung (8UE)",
+        "Operationen der Versionsverwaltung (8UE)",
+        "Agiles Arbeiten mit Git (8UE)",
+        "Continuous Integration und Continuous Delivery (8UE)",
+        "Software Testing und Qualitätssicherung (8UE)"
+      ]
+    },
+    {
+      "courseName": "DevOps Foundation",
+      "courseContent": [
+        "Die drei Wege in DevOps (8UE)",
+        "Anwendung von Conways Gesetz (6UE)",
+        "Continuous Integration und automatisiertes Testen (6UE)",
+        "Release-Automatisierung und Risikoreduktion (10UE)",
+        "Continuous Delivery und Continuous Integration (10UE)",
+        "Telemetriedaten und A/B-Tests (8UE)",
+        "Review- und Koordinationsprozesse (6UE)",
+        "Information Security  (12UE)",
+        "Continuous Security (6UE)",
+        "Deployment Pipeline (8UE)"
+      ]
+    },
+
+    {
+      "courseName": "AI-Development",
+      "courseContent": [
+        "Bilddaten auswerten: Menschen und Hunde (6UE)",
+        "Das XOR-Problem und seine Bedeutung (6UE)",
+        "Mit etikettierten Daten lernen (6UE)",
+        "Moderne künstliche neuronale Netze (6UE)",
+        "Neuronale Netze und KI (6UE)",
+        "Backpropagation und verborgene Knoten (6UE)",
+        "Lernfähiges Vorhersageprogramm (UE)",
+        "Bilder auswerten und Ziffern erkennen (z. B. mit NumPy) (6UE)",
+        "Bilder vorbereiten mit der Python Imaging Library (PIL) (UE)",
+        "Aktivierungsfunktionen (z. B. Sigmoid) (6UE)",
+        "Daten klassifizieren: Wie lernt ein Computer, Objekte zu erkennen (4UE)",
+        "Einfache Vorhersagen – Lineare Regression (4UE)",
+        "Lernen durch Beobachtung (4UE)",
+        "Daten visualisieren und professionell auswerten (4UE)"
+      ]
+    },
+    {
+      "courseName": "Projektarbeit AI-Development",
+      "courseContent": ["Qualifikationsprojekt AI-Development (40UE)"]
+    },
+    {
+      "courseName": "Machine Learning",
+      "courseContent": [
+        "Einführung in Machine Learning (8UE)",
+        "Terminologie und Notation (6UE)",
+        "Entwicklung eines Machine-Learning-Systems (10UE)",
+        "Datenvorbereitung für Machine Learning (8UE)",
+        "Arten des Machine Learning (8UE)",
+        "Bewertung von Modellen (8UE)",
+        "Einführung in Python für Machine Learning (8UE)",
+        "Installation von Python-Paketen (6UE)",
+        "Verwendung von Scikit-Learn für Klassifikationen (8UE)",
+        "Training und Auswahl eines Vorhersagemodells (6UE)",
+        "K-Nearest Neighbors Algorithmus (8UE)",
+        "Gradientenabstiegsverfahren (8UE)",
+        "Adaptive lineare Neuronen (8UE)",
+        "Random Forests und Entscheidungsbäume (8UE)",
+        "Perzeptron-Algorithmen für Klassifikation (8UE)",
+        "Verarbeitung fehlender Daten (10UE)",
+        "Ensemble Learning (z. B. Bagging und Boosting) (8UE)",
+        "Modellbewertung und Hyperparameter-Tuning (8UE)",
+        "Dimensionalitätsreduktion (10UE)",
+        "Clustering-Verfahren (z. B. k-Means) (8UE)"
+      ]
+    },
+    {
+      "courseName": "Projektarbeit Machine Learning",
+      "courseContent": [
+        "Vergleich von drei gängigen Klassifizierungsalgorithmen (8UE)",
+        "Vorbereitung und Transformation der Daten durch One-Hot Encoding und Standardisierun (8UE)",
+        "Evaluation der Modellgenauigkeit durch Messung der Accuracy und Analyse der Confusion Matrix für jeden Algorithmus. (8UE)",
+        "Untersuchung der Hyperparameter zur Verbesserung der Performance der Algorithmen (8UE)",
+        "Erstellung einer umfassenden Projektpräsentation (8UE)"
+      ]
+    }
+  ],
+  "otherLearningContent": [
+    {
+      "courseName": "Self-Empowerment",
+      "courseContent": [
+        "Seelische Widerstandsfähigkeit und Anpassungskompetenz",
+        "Resilienzfaktoren im Detail",
+        "Die 4 Phasen des Lernens - Wissensaneignung und persönliche Entwicklung",
+        "Meine persönlichen Werte und Ziele",
+        "Persönliche Zielplanung",
+        "Lern- und Berufsalltag strukturieren",
+        "Pareto Prinzip und Eisenhower Matrix",
+        "“Getting Things Done” GTD",
+        "ALPEN Methode, Pomodoro Technik, ABC-Methode",
+        "Gesundheit und Entspannungstechniken",
+        "Stressmanagement"
+      ]
+    },
+    {
+      "courseName": "Bewerbercoaching",
+      "courseContent": [
+        "Smarte, sinnvolle und erfolgreiche Stellensuche",
+        "Digitale Stellensuche",
+        "Anschreiben in Bestform",
+        "Lebenslauf, Unterlagen etc. In Bestform",
+        "Vorbereitung auf Bewerbungsgespräche",
+        "Bewerbungsgespräche erfolgreich führen",
+        "Zusage, Absage, Entscheidung",
+        "Strukturierung der Bewerbungsaktivitäten",
+        "Absagen in neue Energie umwandeln",
+        "Erfolgreicher Start ins Unternehmen"
+      ]
+    }
+  ]
+}

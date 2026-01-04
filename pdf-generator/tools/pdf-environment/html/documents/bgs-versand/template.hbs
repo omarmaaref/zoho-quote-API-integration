@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Angebot - Kostenträger | company | 1.0</title>
+    <link
+      rel='stylesheet'
+      href='{{StaticFileserver}}/../bgs-versand/styles.css'
+    />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+  </head>
+  <body>
+    <div class='horizontal'></div>
+    <div class='page-header page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Logo.svg'
+        width='180px'
+        height='auto'
+      />
+    </div>
+    <div class='page-footer page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Welle_primaer.jpg'
+        width='100%'
+        height='100%'
+      />
+      <div class='legal-information'>
+        company GmbH<br />USt.-ID: DE 344613488<br />Amtsgericht Hannover, HRB
+        228435<br />Stand des Dokumentes: 01.08.2025
+      </div>
+      <div class='bank-information'>
+        Bank: Deutsche Bank<br />IBAN: DE40 8607 0000 0016 7049 00<br />BIC:
+        DEUTDE8LX
+      </div>
+      <div class='document-info'>
+        {{quote.date}}<br />
+      </div>
+    </div>
+    <div class='wrapper'>
+      <table>
+        <thead>
+          <tr>
+            <td><div class='page-header-space'>&nbsp;</div></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='page-content'>
+              <div class='page-header-space-mail'>&nbsp;</div>
+              <div class='adress-fold'>
+                <div class='header-line'></div>
+                <div class='company-info'>
+                  company GmbH, Philipsbornstraße 2, 30165 Hannover, Telefon:
+                  0800 8070602, E-Mail: beratung@company.de, Web: www.company.de
+                </div>
+              </div>
+              <div class='recepient'>
+                <div style='margin-bottom:10px'>{{recepient.fullName}}</div>
+                <div>{{recepient.address}}</div>
+                <div>{{recepient.plz-stadt}}</div>
+              </div>
+
+              <div>
+                <div class='location-date'>{{document.location}},
+                  {{document.date}}
+                </div>
+                <div class='section-title'>Liste der Maßnahmemodule</div>
+                <div
+                  style='margin:20px 0;border-bottom:2px solid #97c73c;width:50px'
+                ></div>
+                <div class='sub-title'>
+                  <div>Kundennummer:
+                    {{#if
+                      measureSheet.kundennummer
+                    }}{{measureSheet.kundennummer}}{{else}}wird beantragt{{/if}}</div>
+                  <div>Maßnahmenummer:
+                    {{#if
+                      measureSheet.massnahmenummer
+                    }}{{measureSheet.massnahmenummer}}{{else}}wird beantragt{{/if}}</div>
+                </div>
+                <table class='modules-table'>
+                  <thead>
+                    <tr>
+                      <th class='number-col'>Modulnr.</th>
+                      <th>Modulbezeichnung</th>
+                      <th class='units-col'>Anzahl UE</th>
+                      <th class='units-col'>Anzahl UT</th>
+                      <th class='price-col'>Preis in €</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{#each measureSheet.modules}}
+                      <tr>
+                        <td class='number-col'>
+                          {{#if this.number}}{{this.number}}{{else}}wird
+                            beantragt{{/if}}
+                        </td>
+                        <td>{{this.title}}</td>
+                        <td class='units-col'>{{this.teachingUnits}}</td>
+                        <td class='units-col'>{{this.teachingDays}}</td>
+                        <td class='price-col'>{{this.price}}</td>
+                      </tr>
+                    {{/each}}
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><div class='page-footer-space'>&nbsp;</div></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

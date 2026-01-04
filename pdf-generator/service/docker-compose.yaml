@@ -1,0 +1,44 @@
+# ----------------------------------------
+# docker compose for local docker version
+# ----------------------------------------
+
+# name: 'pdf-generator-service'
+
+services:
+  # 2) Gateway -------------------------------------------------------
+  pdf-generator-service:
+    container_name: 'pdf-generator-service'
+    image: pdf-generator-service:latest
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M # Memory usage: 29.95MB / 512MB
+
+    restart: always
+
+    # expose external (for development only)
+    # swagger
+    ports:
+      - 3005:3000
+
+    environment:
+      # timezone
+      TZ: Europe/Berlin
+
+      # mode
+      NODE_ENV: production
+
+      # service name
+      SERVICE_NAME: 'pdf-generator-service'
+
+      # prefix and version
+      GLOBAL_PREFIX: api
+      API_PREFIX: v
+      API_VERSION: 1
+
+      # dependencies
+      GOTENBERG_URL: 'http://host.docker.internal:4000'
+
+      # dev
+      ENABLE_SWAGGER: true

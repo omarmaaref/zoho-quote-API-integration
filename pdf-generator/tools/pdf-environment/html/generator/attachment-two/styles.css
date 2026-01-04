@@ -1,0 +1,344 @@
+html,
+body {
+  width: 1500px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: justify;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #1b1d20;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 40px;
+  font-size: 48px;
+}
+
+h2 {
+  text-align: center;
+  color: #4b7494;
+  margin-bottom: 35px;
+}
+
+.subheading {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.page-content {
+  padding: 0px 50px 0px 50px;
+}
+
+.header-line {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  border-bottom: 4px solid #97c73c;
+  width: 11.69in;
+  margin: 0 auto;
+}
+
+/* feste Bereiche */
+.page-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-header {
+  top: 0;
+  height: 105px;
+  background-color: white;
+  padding-top: 10px;
+  width: 11.69in;
+}
+
+.page-footer {
+  bottom: 0;
+  height: 100px;
+  font-size: 11px;
+  width: 11.69in;
+  padding-top: 15px;
+  background-color: white;
+}
+
+.page-header-space {
+  height: 30px;
+}
+
+.page-footer-space {
+  height: 40px;
+}
+
+.document-pageNr {
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  bottom: 50px;
+  right: -260px;
+}
+
+.legal-information,
+.bank-information,
+.document-info {
+  font-size: 10px;
+  position: absolute;
+  bottom: 1.5rem;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.legal-information {
+  left: 55px;
+}
+
+.bank-information {
+  right: 340px;
+  padding-bottom: 40px;
+}
+
+.document-info {
+  right: 55px;
+}
+
+/* Document specific styles */
+.document-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.client-address {
+  text-align: left;
+  line-height: 1.4;
+}
+
+.company-info {
+  text-align: right;
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+.greeting {
+  margin: 30px 0 20px 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.page-number {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* Druckeinstellungen */
+@page {
+  size: landscape A4;
+  margin: 0;
+}
+
+@media print {
+  .page-header,
+  .page-footer {
+    position: fixed;
+  }
+}
+
+/*tailwind styles*/
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.relative {
+  position: relative;
+}
+
+.h-\[0px\] {
+  height: 0px;
+}
+
+.top-\[5px\] {
+  top: 5px;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.border-\[0\.5px\] {
+  border-width: 0.5px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-black {
+  border-color: black;
+}
+
+.text-\[9px\] {
+  font-size: 9px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.text-main-theme {
+  color: #4b7494;
+}
+
+.bg-anlage2-th {
+  background-color: #f3f4f6;
+}
+
+.min-w-\[70px\] {
+  min-width: 70px;
+}
+
+.max-w-\[45px\] {
+  max-width: 45px;
+}
+
+.max-w-\[60px\] {
+  max-width: 60px;
+}
+
+.max-w-\[70px\] {
+  max-width: 70px;
+}
+
+.max-w-\[120px\] {
+  max-width: 120px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
+.max-w-\[210px\] {
+  max-width: 210px;
+}

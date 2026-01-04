@@ -1,0 +1,77 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pdf-generator-service-deployment
+spec:
+  replicas: 1 # Number of instances (pods) to run
+
+  selector:
+    matchLabels:
+      app: pdf-generator-service
+
+  template:
+    metadata:
+      labels:
+        app: pdf-generator-service
+
+    spec:
+      containers:
+        - name: pdf-generator-service-container
+          image: pdf-generator-service:{{VERSION}}
+          imagePullPolicy: IfNotPresent
+
+          # set limits
+          resources:
+            requests:
+              memory: '128Mi'
+              cpu: '250m'
+            limits:
+              memory: '256Mi'
+              cpu: '500m'
+
+          env:
+            # common ---------------------
+            - name: TZ
+              value: Europe/Berlin
+            - name: NODE_ENV
+              value: production
+
+            # service name
+            - name: SERVICE_NAME
+              value: pdf-generator-service
+
+            # own api ---------------------
+            # - name: SERVICE_PORT
+            #   value: '3000' # default
+            - name: GLOBAL_PREFIX
+              value: 'api'
+            - name: API_PREFIX
+              value: v
+            - name: API_VERSION
+              value: '1'
+
+            # connection: Gotenberg ---------------------
+            - name: GOTENBERG_URL
+              # local docker Gotenberg:
+              value: http://host.docker.internal:4000
+
+            # dev
+            - name: ENABLE_SWAGGER
+              value: 'true'
+
+---
+# Service -----------------------------------
+apiVersion: v1
+kind: Service
+metadata:
+  name: pdf-generator-service-service
+spec:
+  type: NodePort # for DEV
+  selector:
+    app: pdf-generator-service
+  ports:
+    - protocol: TCP
+      name: http
+      nodePort: 30005 # for DEV - The port on the node where external traffic will come in on (requires type NodePort obove)
+      port: 3000 # The port of this service
+      targetPort: 3000 # The target port on the pod(s) to forward traffic to

@@ -1,0 +1,235 @@
+{
+  "document": {
+    "createdAt": "15.08.2025",
+    "dateOfDocumentVersion": "15.08.2024"
+  },
+  "StaticFileserver": "http://host.docker.internal:8080/generator",
+  "client": {
+    "email": "tollner-morlong@noemail.invalid",
+    "firstName": "Leon",
+    "lastName": "Phung",
+    "salutation": "Herr"
+  },
+  "deal": {
+    "startDate": "15.08.2024",
+    "endDate": "15.08.2024",
+    "teachingUnits": 2000
+  },
+  "measureSheet": {
+    "name": "Material- und Absatzwirtschaft",
+    "number": "237/0654/2924",
+    "modules": [
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      }
+    ]
+  },
+  "courseContent": [
+    {
+      "courseName": "Python32",
+      "courseContentWithTU": [
+        "Einführung: Algorithmen und Python-Grundlagen (6UE)",
+        "Syntax und Semantik (6UE)",
+        "Variablen und Zuweisungen (6UE)",
+        "Datentypen: Ganzzahlen, Gleitkommazahlen, komplexe Zahlen (8UE)",
+        "Entwicklungsumgebungen: IDLE und Thonny (8UE)",
+        "Listen und ihre Methoden (8UE)",
+        "Mengen (set) und Dictionaries (8UE)",
+        "Zeichenketten (str) und ihre Operationen (8UE)",
+        "Boolesche Werte und logische Operatoren (6UE)",
+        "Tupel und ihre Verwendung (6UE)",
+        "Schleifen: for und while (10UE)",
+        "Break und Continue in Schleifen (4UE)",
+        "Parameter und Rückgabewerte (8UE)",
+        "Kontrollstrukturen: if, else, elif (10UE)",
+        "Funktionen definieren und aufrufen (10UE)",
+        "Anonyme Funktionen mit Lambda (8UE)",
+        "Mathematische Funktionen: math und random (8UE)",
+        "Zeitmodule: datetime und time (8UE)",
+        "Module importieren und nutzen (8UE)",
+        "Fehlerbehandlung mit try und except (8UE)",
+        "Dateiverarbeitung: Öffnen, Lesen, Schreiben (10UE)",
+        "GUI-Entwicklung mit tkinter (12UE)",
+        "Zugriff auf die Systemumgebung mit os (6UE)",
+        "Reguläre Ausdrücke: Muster und Anwendung (10UE)",
+        "JSON-Daten speichern und laden (8UE)",
+        "Widgets und Eventhandling (8UE)",
+        "Einführung in OOP (Klassen und Objekte) (10UE)",
+        "Methoden und Vererbung (10UE)",
+        "Grafikprogrammierung mit PIL (8UE)",
+        "Debugging und Fehlersuche (6UE)"
+      ]
+    },
+    {
+      "courseName": "C",
+      "courseContentWithTU": [
+        "Struktur von C-Programmen (12UE)",
+        "Datentypen, Konstanten und Variablen (12UE)",
+        "Verwendung von Funktionen (16UE)",
+        "Operatoren (10UE)",
+        "Kontrollstrukturen (10UE)",
+        "Symbolische Konstanten und Makros (8UE)",
+        "Vektoren und Strings (12UE)",
+        "Speicherklassen (16UE)",
+        "Bit-Manipulationen (10UE)",
+        "Zeiger (8UE)",
+        "Strukturen und Datenzusammenfassung (6UE)",
+        "Dynamische Speicherplatzverwaltung (8UE)",
+        "Strukturierte Datentypen (8UE)",
+        "High-Level- und Low-Level-Dateizugriff (8UE)",
+        "Dialoge (8UE)",
+        "Verkettete Listen (8UE)"
+      ]
+    },
+    {
+      "courseName": "C++",
+      "courseContentWithTU": [
+        "Einführung: Eigenschaften, Verarbeitung, Unterschiede zu C und IDE-Setup (10UE)",
+        "Klassen und Konstruktoren in C++ (8UE)",
+        "Templates (8UE)",
+        "Container (8UE)",
+        "File-Input und -Output und Operator-Overloading (6UE)",
+        "Type-Casting für Klassen und in Klassenhierarchien (8UE)",
+        "Vererbung (10UE)",
+        "Abstrakte Klassen (6UE)",
+        "Polymorphe Klassen (6UE)",
+        "Smart Pointer (10UE)",
+        "Speicherreservierung (10UE)",
+        "Variadische Templates (6UE)",
+        "Concepts (6UE)",
+        "Assoziative Container (8UE)",
+        "Algorithmen der Standardbibliothek (10UE)",
+        "Multithreading (10UE)",
+        "Vertiefung von Multithreading (10UE)",
+        "Exception-Handling (8UE)",
+        "Wahlfreier Dateizugriff (6UE)",
+        "Dateisysteme (6UE)"
+      ]
+    },
+    {
+      "courseName": "Projektarbeit C++",
+      "courseContentWithTU": ["Qualifikationsprojekt C++ (40UE)"]
+    },
+    {
+      "courseName": "GitHub/GitLab",
+      "courseContentWithTU": [
+        "Versionsverwaltung (8UE)",
+        "Operationen der Versionsverwaltung (8UE)",
+        "Agiles Arbeiten mit Git (8UE)",
+        "Continuous Integration und Continuous Delivery (8UE)",
+        "Software Testing und Qualitätssicherung (8UE)"
+      ]
+    },
+    {
+      "courseName": "DevOps Foundation",
+      "courseContentWithTU": [
+        "Die drei Wege in DevOps (8UE)",
+        "Anwendung von Conways Gesetz (6UE)",
+        "Continuous Integration und automatisiertes Testen (6UE)",
+        "Release-Automatisierung und Risikoreduktion (10UE)",
+        "Continuous Delivery und Continuous Integration (10UE)",
+        "Telemetriedaten und A/B-Tests (8UE)",
+        "Review- und Koordinationsprozesse (6UE)",
+        "Information Security  (12UE)",
+        "Continuous Security (6UE)",
+        "Deployment Pipeline (8UE)"
+      ]
+    },
+
+    {
+      "courseName": "AI-Development",
+      "courseContentWithTU": [
+        "Bilddaten auswerten: Menschen und Hunde (6UE)",
+        "Das XOR-Problem und seine Bedeutung (6UE)",
+        "Mit etikettierten Daten lernen (6UE)",
+        "Moderne künstliche neuronale Netze (6UE)",
+        "Neuronale Netze und KI (6UE)",
+        "Backpropagation und verborgene Knoten (6UE)",
+        "Lernfähiges Vorhersageprogramm (UE)",
+        "Bilder auswerten und Ziffern erkennen (z. B. mit NumPy) (6UE)",
+        "Bilder vorbereiten mit der Python Imaging Library (PIL) (UE)",
+        "Aktivierungsfunktionen (z. B. Sigmoid) (6UE)",
+        "Daten klassifizieren: Wie lernt ein Computer, Objekte zu erkennen (4UE)",
+        "Einfache Vorhersagen – Lineare Regression (4UE)",
+        "Lernen durch Beobachtung (4UE)",
+        "Daten visualisieren und professionell auswerten (4UE)"
+      ]
+    },
+    {
+      "courseName": "Projektarbeit AI-Development",
+      "courseContentWithTU": ["Qualifikationsprojekt AI-Development (40UE)"]
+    },
+    {
+      "courseName": "Machine Learning",
+      "courseContentWithTU": [
+        "Einführung in Machine Learning (8UE)",
+        "Terminologie und Notation (6UE)",
+        "Entwicklung eines Machine-Learning-Systems (10UE)",
+        "Datenvorbereitung für Machine Learning (8UE)",
+        "Arten des Machine Learning (8UE)",
+        "Bewertung von Modellen (8UE)",
+        "Einführung in Python für Machine Learning (8UE)",
+        "Installation von Python-Paketen (6UE)",
+        "Verwendung von Scikit-Learn für Klassifikationen (8UE)",
+        "Training und Auswahl eines Vorhersagemodells (6UE)",
+        "K-Nearest Neighbors Algorithmus (8UE)",
+        "Gradientenabstiegsverfahren (8UE)",
+        "Adaptive lineare Neuronen (8UE)",
+        "Random Forests und Entscheidungsbäume (8UE)",
+        "Perzeptron-Algorithmen für Klassifikation (8UE)",
+        "Verarbeitung fehlender Daten (10UE)",
+        "Ensemble Learning (z. B. Bagging und Boosting) (8UE)",
+        "Modellbewertung und Hyperparameter-Tuning (8UE)",
+        "Dimensionalitätsreduktion (10UE)",
+        "Clustering-Verfahren (z. B. k-Means) (8UE)"
+      ]
+    },
+    {
+      "courseName": "Projektarbeit Machine Learning",
+      "courseContentWithTU": [
+        "Vergleich von drei gängigen Klassifizierungsalgorithmen (8UE)",
+        "Vorbereitung und Transformation der Daten durch One-Hot Encoding und Standardisierun (8UE)",
+        "Evaluation der Modellgenauigkeit durch Messung der Accuracy und Analyse der Confusion Matrix für jeden Algorithmus. (8UE)",
+        "Untersuchung der Hyperparameter zur Verbesserung der Performance der Algorithmen (8UE)",
+        "Erstellung einer umfassenden Projektpräsentation (8UE)"
+      ]
+    }
+  ],
+  "otherLearningContent": [
+    {
+      "courseName": "Self-Empowerment",
+      "courseContentWithTU": [
+        "Seelische Widerstandsfähigkeit und Anpassungskompetenz",
+        "Resilienzfaktoren im Detail",
+        "Die 4 Phasen des Lernens - Wissensaneignung und persönliche Entwicklung",
+        "Meine persönlichen Werte und Ziele",
+        "Persönliche Zielplanung",
+        "Lern- und Berufsalltag strukturieren",
+        "Pareto Prinzip und Eisenhower Matrix",
+        "“Getting Things Done” GTD",
+        "ALPEN Methode, Pomodoro Technik, ABC-Methode",
+        "Gesundheit und Entspannungstechniken",
+        "Stressmanagement"
+      ]
+    },
+    {
+      "courseName": "Bewerbercoaching",
+      "courseContentWithTU": [
+        "Smarte, sinnvolle und erfolgreiche Stellensuche",
+        "Digitale Stellensuche",
+        "Anschreiben in Bestform",
+        "Lebenslauf, Unterlagen etc. In Bestform",
+        "Vorbereitung auf Bewerbungsgespräche",
+        "Bewerbungsgespräche erfolgreich führen",
+        "Zusage, Absage, Entscheidung",
+        "Strukturierung der Bewerbungsaktivitäten",
+        "Absagen in neue Energie umwandeln",
+        "Erfolgreicher Start ins Unternehmen"
+      ]
+    }
+  ]
+}

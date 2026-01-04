@@ -1,0 +1,355 @@
+{
+  "__StaticFileserver": "http://company.de/generator",
+  "StaticFileserver": "http://host.docker.internal:8080/generator",
+  "document": {
+    "date": "16.7.2025",
+    "location": "Hannover"
+  },
+  "recepient": {
+    "fullName": "Omar Maaref",
+    "address": "Omaren Str. 8",
+    "plz-stadt": "10779, Berlin"
+  },
+  "measureSheet": {
+    "kundennummer": "1212332",
+    "massnahmenummer": "237/0654/2924",
+    "modules": [
+      {
+        "number": 1,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer"
+      },
+      {
+        "number": 2,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 3,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 4,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 5,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 6,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 7,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 8,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 9,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 10,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 11,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 12,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 13,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 14,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 15,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 16,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software EngineerPerception Software EngineerPerception Software EngineerPerception Software EngineerPerception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      },
+      {
+        "number": 74,
+        "price": "15.348,00 €",
+        "teachingDays": 150,
+        "teachingUnits": 1200,
+        "title": "Perception Software Engineer (m/w/d)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "StaticFileserver": "http://host.docker.internal:8080/generator",
+  "client": {
+    "email": "Angela_bileska@outlook.com",
+    "firstName": "Angela",
+    "lastName": "Bileska",
+    "salutation": "Frau",
+    "city": "Wolfratshausen",
+    "street": "Sauerlacher Str. 47",
+    "zip": "82515"
+  },
+  "document": {
+    "uploadId": "399644000052043211",
+    "createdAt": "17.11.2025",
+    "dateOfDocumentVersion": "17.11.2025"
+  },
+  "certificate": {
+    "degreeDesignation": "Büro- und Projektassistent - für Quereinstieg - Qualifizierung in Büro, Sekretariat mit fortgeschrittenen MS Office-Kenntnissen",
+    "percentage": 86,
+    "teachingUnits": 840,
+    "certificateId": "KN.1.49934"
+  },
+  "courseContent": [
+    {
+      "courseVersion": "K7.0013_4.0",
+      "courseName": "MS-Office Outlook",
+      "courseContentWithTU": [
+        "Kennenlernen von Outlook und Erstellen, Bearbeiten und Verwalten von E-Mails (8UE)",
+        "Automatisieren in Outlook durch Regeln (8UE)",
+        "Verwalten von Aufgaben (8UE)",
+        "Anlegen und Verwalten von Kontakten (8UE)",
+        "Pflegen des Kalenders und Organisieren von Besprechungen (8UE)"
+      ],
+      "courseContent": [
+        "Kennenlernen von Outlook und Erstellen, Bearbeiten und Verwalten von E-Mails",
+        "Automatisieren in Outlook durch Regeln",
+        "Verwalten von Aufgaben",
+        "Anlegen und Verwalten von Kontakten",
+        "Pflegen des Kalenders und Organisieren von Besprechungen"
+      ],
+      "teachingUnits": [8, 8, 8, 8, 8]
+    },
+    {
+      "courseVersion": "K7.0014_3.0",
+      "courseName": "MS-Office Excel Basic",
+      "courseContentWithTU": [
+        "Unterschied zwischen Relativen und Absoluten Zellbezug kennen (8UE)",
+        "Kennenlernen von Excel: Dateneingabe, Zellenformatierungen und Arbeitsmappenverwaltung (8UE)",
+        "Zellen formatieren, ausfüllen, kopieren und verschieben (8UE)",
+        "Mit Funktionen Arbeiten (8UE)",
+        "Mit Formeln arbeiten (8UE)"
+      ],
+      "courseContent": [
+        "Unterschied zwischen Relativen und Absoluten Zellbezug kennen",
+        "Kennenlernen von Excel: Dateneingabe, Zellenformatierungen und Arbeitsmappenverwaltung",
+        "Zellen formatieren, ausfüllen, kopieren und verschieben",
+        "Mit Funktionen Arbeiten",
+        "Mit Formeln arbeiten"
+      ],
+      "teachingUnits": [8, 8, 8, 8, 8]
+    },
+    {
+      "courseVersion": "K7.0012_4.0",
+      "courseName": "Cloudbasiertes Arbeiten",
+      "courseContentWithTU": [
+        "Arbeiten im Team mit OneNote (8UE)",
+        "Arbeiten mit Planner und To-Do (8UE)",
+        "Arbeiten mit SharePoint (8UE)",
+        "Unterschiede zwischen den Cloudversionen (8UE)",
+        "Arbeiten im Team mit MS Teams (8UE)"
+      ],
+      "courseContent": [
+        "Arbeiten im Team mit OneNote",
+        "Arbeiten mit Planner und To-Do",
+        "Arbeiten mit SharePoint",
+        "Unterschiede zwischen den Cloudversionen",
+        "Arbeiten im Team mit MS Teams"
+      ],
+      "teachingUnits": [8, 8, 8, 8, 8]
+    },
+    {
+      "courseVersion": "K7.0057_3.0",
+      "courseName": "Remote Work mit KI",
+      "courseContentWithTU": [
+        "Datenanalyse und Entscheidungsfindung mit KI (2UE)",
+        "Kommunikation und Kollaboration im Remote-Team (2UE)",
+        "New Work / Arbeitswelt 4.0 (4UE)",
+        "Best Practices für effizientes Remote Arbeiten (2UE)",
+        "Vorteile und Herausforderungen des Remote Work (2UE)",
+        "Tools und Technologien für Remote Work (2UE)",
+        "Anwendungen von KI im Arbeitsalltag (2UE)",
+        "Einführung in Künstliche Intelligenz (KI) (2UE)",
+        "Automatisierung von Aufgaben mit KI-Tools (2UE)",
+        "Einführung in Remote Work und New Work (4UE)",
+        "Zukunftsperspektiven von Remote Work und KI im Arbeitsalltag (2UE)",
+        "Virtuelle Assistenten und Chatbots im Unternehmen (2UE)",
+        "KI-gestützte Kommunikation und Collaboration-Tools (2UE)",
+        "Zeitmanagement und Selbstorganisation im Home Office (4UE)",
+        "Sicherheits- und Datenschutzaspekte bei Remote Work und KI (4UE)",
+        "Integration von KI in bestehende Arbeitsprozesse (2UE)"
+      ],
+      "courseContent": [
+        "Datenanalyse und Entscheidungsfindung mit KI",
+        "Kommunikation und Kollaboration im Remote-Team",
+        "New Work / Arbeitswelt 4.0",
+        "Best Practices für effizientes Remote Arbeiten",
+        "Vorteile und Herausforderungen des Remote Work",
+        "Tools und Technologien für Remote Work",
+        "Anwendungen von KI im Arbeitsalltag",
+        "Einführung in Künstliche Intelligenz (KI)",
+        "Automatisierung von Aufgaben mit KI-Tools",
+        "Einführung in Remote Work und New Work",
+        "Zukunftsperspektiven von Remote Work und KI im Arbeitsalltag",
+        "Virtuelle Assistenten und Chatbots im Unternehmen",
+        "KI-gestützte Kommunikation und Collaboration-Tools",
+        "Zeitmanagement und Selbstorganisation im Home Office",
+        "Sicherheits- und Datenschutzaspekte bei Remote Work und KI",
+        "Integration von KI in bestehende Arbeitsprozesse"
+      ],
+      "teachingUnits": [2, 2, 4, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 4, 4, 2]
+    },
+    {
+      "courseVersion": "K7.0009_3.0",
+      "courseName": "MS-Office PowerPoint",
+      "courseContentWithTU": [
+        "Planen und Gestalten von Präsentationen mit Hilfe von Designs, Schriftarten und Vorlagen (8UE)",
+        "Erstellen von Masterlayouts mit dem Folienmaster und Verwenden dieser (8UE)",
+        "Zielgerechtes Einsetzen und Anpassen von Animationen und Übergängen (8UE)",
+        "Visualisieren von Informationen und Texten durch Schaubilder, Formen und Smart-Art (8UE)",
+        "Einfügen und Einrichten von Diagrammen (8UE)"
+      ],
+      "courseContent": [
+        "Planen und Gestalten von Präsentationen mit Hilfe von Designs, Schriftarten und Vorlagen",
+        "Erstellen von Masterlayouts mit dem Folienmaster und Verwenden dieser",
+        "Zielgerechtes Einsetzen und Anpassen von Animationen und Übergängen",
+        "Visualisieren von Informationen und Texten durch Schaubilder, Formen und Smart-Art",
+        "Einfügen und Einrichten von Diagrammen"
+      ],
+      "teachingUnits": [8, 8, 8, 8, 8]
+    },
+    {
+      "courseVersion": "K7.0011_3.0",
+      "courseName": "MS-Office Word Advanced",
+      "courseContentWithTU": [
+        "Arbeiten mit Designs (8UE)",
+        "Erstellen von Verweisen in Word (8UE)",
+        "Erstellen, Einsetzen und Anpassen von Dokumentenvorlagen (8UE)",
+        "Einfügen und korrektes Einbinden von Grafiken und SmartArt-Objekten (8UE)",
+        "Erstellen und Anpassen von Formularen (8UE)"
+      ],
+      "courseContent": [
+        "Arbeiten mit Designs",
+        "Erstellen von Verweisen in Word",
+        "Erstellen, Einsetzen und Anpassen von Dokumentenvorlagen",
+        "Einfügen und korrektes Einbinden von Grafiken und SmartArt-Objekten",
+        "Erstellen und Anpassen von Formularen"
+      ],
+      "teachingUnits": [8, 8, 8, 8, 8]
+    },
+    {
+      "courseVersion": "K7.0010_3.0",
+      "courseName": "MS-Office Excel Advanced",
+      "courseContentWithTU": [
+        "Verstehen und Anwenden von Verweisfunktionen (8UE)",
+        "Verstehen und Anwenden von WENN-Funktionen inklusive Verschachtelung (8UE)",
+        "Datenanalyse mit Pivot (8UE)",
+        "Knüpfen von Formatierungen an Bedingungen (8UE)",
+        "Erstellen von professionellen Diagrammen (8UE)"
+      ],
+      "courseContent": [
+        "Verstehen und Anwenden von Verweisfunktionen",
+        "Verstehen und Anwenden von WENN-Funktionen inklusive Verschachtelung",
+        "Datenanalyse mit Pivot",
+        "Knüpfen von Formatierungen an Bedingungen",
+        "Erstellen von professionellen Diagrammen"
+      ],
+      "teachingUnits": [8, 8, 8, 8, 8]
+    },
+    {
+      "courseVersion": "K6.0001_4.0",
+      "courseName": "Kaufmännische Grundlagen",
+      "courseContentWithTU": [
+        "Prozess von der Bestellung bis zur Lieferung (8UE)",
+        "Rechtssichere Bearbeitung von Kundenaufträgen (8UE)",
+        "Rechtssystem und Justizwesen (8UE)",
+        "Ablage und gesetzliche Aufbewahrungsfristen (4UE)",
+        "Kennzahlen (12UE)",
+        "Führung und Auswertung von Personalstatistiken (20UE)",
+        "Planung, Beschaffung und Verwaltung des Büromaterialbedarfs (6UE)",
+        "Gewinn (6UE)",
+        "Unterstützung der Personaleinsatzplanung und Arbeitszeitregelungen (20UE)",
+        "Vor- und Nachkalkulation (8UE)",
+        "Kaufmännisches Rechnen (8UE)",
+        "Bilanz (8UE)",
+        "Auftragsabwicklung, Begleitdokumente und Rechnungen (8UE)",
+        "Einholung, Prüfung und Vergleich von Angeboten (8UE)",
+        "Verkauf und Marketing (20UE)",
+        "Bearbeitung und Abwicklung von Kundenanfragen (8UE)",
+        "Produktion (20UE)",
+        "Ermittlung des Material- und Dienstleistungsbedarfs (6UE)",
+        "Liquidität (8UE)",
+        "Externes und internes Rechnungswesen (6UE)"
+      ],
+      "courseContent": [
+        "Prozess von der Bestellung bis zur Lieferung",
+        "Rechtssichere Bearbeitung von Kundenaufträgen",
+        "Rechtssystem und Justizwesen",
+        "Ablage und gesetzliche Aufbewahrungsfristen",
+        "Kennzahlen",
+        "Führung und Auswertung von Personalstatistiken",
+        "Planung, Beschaffung und Verwaltung des Büromaterialbedarfs",
+        "Gewinn",
+        "Unterstützung der Personaleinsatzplanung und Arbeitszeitregelungen",
+        "Vor- und Nachkalkulation",
+        "Kaufmännisches Rechnen",
+        "Bilanz",
+        "Auftragsabwicklung, Begleitdokumente und Rechnungen",
+        "Einholung, Prüfung und Vergleich von Angeboten",
+        "Verkauf und Marketing",
+        "Bearbeitung und Abwicklung von Kundenanfragen",
+        "Produktion",
+        "Ermittlung des Material- und Dienstleistungsbedarfs",
+        "Liquidität",
+        "Externes und internes Rechnungswesen"
+      ],
+      "teachingUnits": [
+        8, 8, 8, 4, 12, 20, 6, 6, 20, 8, 8, 8, 8, 8, 20, 8, 20, 6, 8, 6
+      ]
+    },
+    {
+      "courseVersion": "K7.0004_4.0",
+      "courseName": "Buchführung",
+      "courseContentWithTU": [
+        "Roh-, Hilfs- und Betriebsstoffe (8UE)",
+        "Warenverkehr (8UE)",
+        "Löhne und Gehälter (8UE)",
+        "Privatentnahmen und -einlagen (8UE)",
+        "Aufbewahrungsfristen und Jahresabschlussvorbereitung (8UE)",
+        "Bewertungen und Buchungen im Anlagevermögen (8UE)",
+        "Zeitliche Abgrenzung von Aufwendungen und Erträgen (8UE)",
+        "Buchführung als Teil des Rechnungswesens (8UE)",
+        "Steuerliche Besonderheiten im Bereich des Anlagevermögens (8UE)",
+        "Besonderheiten bei laufenden Buchungen (8UE)",
+        "Inventar und Bilanz (8UE)",
+        "Sachanlagevermögen, Bewertungen und Buchungen der Verbindlichkeiten (8UE)",
+        "Darlehen und Schuldzinsen, Bewertungen und Buchungen im Umlaufvermögen (8UE)",
+        "Systematik der Finanzbuchführung (8UE)",
+        "Umsatzsteuer (8UE)"
+      ],
+      "courseContent": [
+        "Roh-, Hilfs- und Betriebsstoffe",
+        "Warenverkehr",
+        "Löhne und Gehälter",
+        "Privatentnahmen und -einlagen",
+        "Aufbewahrungsfristen und Jahresabschlussvorbereitung",
+        "Bewertungen und Buchungen im Anlagevermögen",
+        "Zeitliche Abgrenzung von Aufwendungen und Erträgen",
+        "Buchführung als Teil des Rechnungswesens",
+        "Steuerliche Besonderheiten im Bereich des Anlagevermögens",
+        "Besonderheiten bei laufenden Buchungen",
+        "Inventar und Bilanz",
+        "Sachanlagevermögen, Bewertungen und Buchungen der Verbindlichkeiten",
+        "Darlehen und Schuldzinsen, Bewertungen und Buchungen im Umlaufvermögen",
+        "Systematik der Finanzbuchführung",
+        "Umsatzsteuer"
+      ],
+      "teachingUnits": [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+    },
+    {
+      "courseVersion": "K7.0008_4.0",
+      "courseName": "Projektmanagement Allgemein",
+      "courseContentWithTU": [
+        "Teamentwicklung (6UE)",
+        "Projekt-Initialisierung (6UE)",
+        "Aufgaben eines Projektleiters (8UE)",
+        "Traditionelles Projektmanagement (10UE)",
+        "Hybrides Projektmanagement (6UE)",
+        "Projekt-Steuerung (8UE)",
+        "Vorgehensmodelle (10UE)",
+        "Agiles Projektmanagement (10UE)",
+        "Standards und Normen (10UE)",
+        "Projekt-Definition (8UE)",
+        "Vorgehensmodelle (6UE)",
+        "Projektteams (10UE)",
+        "Projekt-Planung (8UE)",
+        "Einführung in das Projektmanagement (8UE)",
+        "Agile Standards (6UE)",
+        "Projektarten (8UE)",
+        "Kommunikationsmodelle (10UE)",
+        "Vorteile der agilen Arbeitsweise (8UE)",
+        "Führungskompetenzen & Teambuilding (8UE)",
+        "Konflikte (6UE)"
+      ],
+      "courseContent": [
+        "Teamentwicklung",
+        "Projekt-Initialisierung",
+        "Aufgaben eines Projektleiters",
+        "Traditionelles Projektmanagement",
+        "Hybrides Projektmanagement",
+        "Projekt-Steuerung",
+        "Vorgehensmodelle",
+        "Agiles Projektmanagement",
+        "Standards und Normen",
+        "Projekt-Definition",
+        "Vorgehensmodelle",
+        "Projektteams",
+        "Projekt-Planung",
+        "Einführung in das Projektmanagement",
+        "Agile Standards",
+        "Projektarten",
+        "Kommunikationsmodelle",
+        "Vorteile der agilen Arbeitsweise",
+        "Führungskompetenzen & Teambuilding",
+        "Konflikte"
+      ],
+      "teachingUnits": [
+        6, 6, 8, 10, 6, 8, 10, 10, 10, 8, 6, 10, 8, 8, 6, 8, 10, 8, 8, 6
+      ]
+    },
+    {
+      "courseVersion": "K7.0007_3.0",
+      "courseName": "Kommunikation und Konfliktmanagement",
+      "courseContentWithTU": [
+        "Einführung in konstruktives Konfliktmanagement (8UE)",
+        "Einführung in Kommunikationsmodelle und -formen (8UE)",
+        "Strategien zur Konfliktbewältigung (8UE)",
+        "Arten virtueller Kommunikation und Tools (8UE)",
+        "Virtuelle Kommunikation in Unternehmen (8UE)",
+        "Fallstudien und praktische Anwendung des Konfliktmanagements (8UE)",
+        "Praktische Tipps für das digitale Arbeiten (8UE)",
+        "Veränderte Sprache und Schrift durch virtuelle Kommunikation (8UE)",
+        "Konfliktmanagement in der interkulturellen Zusammenarbeit (8UE)",
+        "Konflikte und Konfliktmanagement in virtuellen Teams (8UE)"
+      ],
+      "courseContent": [
+        "Einführung in konstruktives Konfliktmanagement",
+        "Einführung in Kommunikationsmodelle und -formen",
+        "Strategien zur Konfliktbewältigung",
+        "Arten virtueller Kommunikation und Tools",
+        "Virtuelle Kommunikation in Unternehmen",
+        "Fallstudien und praktische Anwendung des Konfliktmanagements",
+        "Praktische Tipps für das digitale Arbeiten",
+        "Veränderte Sprache und Schrift durch virtuelle Kommunikation",
+        "Konfliktmanagement in der interkulturellen Zusammenarbeit",
+        "Konflikte und Konfliktmanagement in virtuellen Teams"
+      ],
+      "teachingUnits": [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+    }
+  ]
+}

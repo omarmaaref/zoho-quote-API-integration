@@ -1,0 +1,23 @@
+{
+  "name": "pdf-environment",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "deploy-docker": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["tofu-down"],
+      "options": {
+        "commands": [
+          "docker compose -f {projectRoot}/docker-compose.yaml up -d"
+        ]
+      }
+    },
+    "undeploy-docker": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["docker compose -f {projectRoot}/docker-compose.yaml down"]
+      }
+    }
+  }
+}

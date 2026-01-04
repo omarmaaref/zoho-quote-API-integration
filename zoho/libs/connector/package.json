@@ -1,0 +1,8 @@
+{
+  "name": "@company/zoho-connector",
+  "version": "0.8.2",
+  "private": true,
+  "devDependencies": {
+    "@company/zoho-types": "0.12.0"
+  }
+}

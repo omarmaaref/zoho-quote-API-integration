@@ -1,0 +1,9 @@
+{
+  "name": "pdf-client-manager-lib",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "projects/pdf-generator/libs/pdf-client-manager/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project pdf-client-manager-lib --web",
+  "targets": {}
+}

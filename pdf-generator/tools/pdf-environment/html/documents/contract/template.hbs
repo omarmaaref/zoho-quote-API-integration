@@ -1,0 +1,996 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Angebot - Kostenträger | company | 1.0</title>
+    <link rel='stylesheet' href='{{StaticFileserver}}/contract/style.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+  </head>
+  <body>
+    <div class='page-header page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Logo.svg'
+        width='180px'
+        height='auto'
+      />
+    </div>
+    <div class='page-footer page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Welle_primaer.jpg'
+        width='100%'
+        height='100%'
+      />
+      <div class='legal-information'>
+        company GmbH<br />
+        Geschäftsführung:<br />
+        Alexandra Ingwersen, Christoph Jordan<br />
+        USt.-ID: DE 344613488<br />
+        Amtsgericht Hannover, HRB 228435<br />
+      </div>
+      <div class='bank-information'>
+        Bank: Deutsche Bank<br />IBAN: DE40 8607 0000 0016 7049 00<br />BIC:
+        DEUTDE8LXXX<br />
+        Stand des Dokumentes:
+        {{dateOfDocumentVersion}}<br />
+
+      </div>
+    </div>
+    <div class='wrapper'>
+      <table>
+        <thead>
+          <tr>
+            <td><div class='page-header-space'>&nbsp;</div></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='page-content'>
+              <div class='header-line'></div>
+              <div class='title-container text-color-primary'>
+                <p class='title'>WEITERBILDUNGSVERTRAG</p>
+              </div>
+              <div>
+                <p class='introduction'>zwischen<a
+                    class='text-color-secondary font-bold'
+                  >{{client.firstName}} {{client.lastName}} </a>- nachfolgend
+                  Teilnehmer/Teilnehmerin genannt –</p>
+                <p class='introduction'>
+                  {{client.street}},
+                  {{client.zip}}
+                  {{client.city}}
+                </p>
+                <p class='introduction'>und
+                  <a class='text-color-secondary font-bold'>company GmbH</a>
+                  – nachfolgend Bildungsträger genannt –</p>
+                <p class='mb-[14px]'>
+                  Philipsbornstraße 2, 30165 Hannover, E-Mail:
+                  beratung@company.de
+                </p>
+              </div>
+              <div>
+                <p class='paragraph text-color-secondary'>
+                  §1 Leistungsumfang
+                </p>
+                <p>
+                  Vertraglicher Leistungsumfang, basierend auf dem Angebot:
+                  {{deal.offerId}}
+                </p>
+                <table class='table'>
+                  <tr>
+                    <th>BGS-/KD-Nr.</th>
+                    <td>{{deal.voucherNumber}}</td>
+                  </tr>
+                  <tr>
+                    <th>Dauer der Weiterbildung</th>
+                    <td>{{deal.startDate}} - {{deal.endDate}}</td>
+                  </tr>
+                  <tr>
+                    <th>Unterrichtsform</th>
+                    <td>
+                      {{deal.learningMethod}}
+                      ({{deal.teachingUnitsPerDay}}UE pro Tag)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Abschlussbezeichnung</th>
+                    <td>{{deal.degreeDesignation}}</td>
+                  </tr>
+                  <tr>
+                    <th>Unterrichtseinheiten</th>
+                    <td>{{deal.totalTeachingUnits}} UE</td>
+                  </tr>
+                  <tr>
+                    <th>Weiterbildungskosten</th>
+                    <td>{{deal.price}}</td>
+                  </tr>
+                  <tr>
+                    <th>Durchschnittskosten je UE</th>
+                    <td>{{deal.avgPricePerUnit}}</td>
+                  </tr>
+                  <tr>
+                    <th>Durchführungsform</th>
+                    <td>{{deal.teachingMethod}}</td>
+                  </tr>
+                  <tr>
+                    <th>Durchführungsort</th>
+                    <td>{{deal.location}}</td>
+                  </tr>
+                  <tr>
+                    <th>Zertifikatseinträge</th>
+                    <td>
+                      {{#each product}}{{this.certificateId}},
+                      {{/each}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Start der Maßnahme</th>
+                    <td>{{deal.startDate}}</td>
+                  </tr>
+                  {{#if deal.additionalAgreement}}
+                    <tr>
+                      <th>Zusatzvereinbarung</th>
+                      <td>{{deal.additionalAgreement}}</td>
+                    </tr>
+                  {{/if}}
+                </table>
+              </div>
+              <div style='page-break-before: always'>
+                <div class='paragraph-container'>
+                  <p class='paragraph text-color-secondary'>
+                    § 2 Vertragliche Rahmenbedingungen
+                  </p>
+                  <p>
+                    Dieser Weiterbildungsvertrag regelt die Erbringung der
+                    Schulungsleistungen durch den Bildungsträger und die Rechte
+                    und Pflichten des Teilnehmers oder der Teilnehmerin.
+                    <br /><br />
+                    Anderslautende, entgegenstehende oder abweichende
+                    Geschäftsbedingungen des Teilnehmers oder der Teilnehmerin
+                    werden nicht Vertragsinhalt, auch wenn der Bildungsträger
+                    nicht ausdrücklich widerspricht.
+                  </p>
+                </div>
+                <div class='paragraph-container'>
+                  <p class='paragraph text-color-secondary'>
+                    § 3 Begriffsbestimmungen
+                  </p>
+                  <p>
+                    „Kostenträger“ meint im Weiteren die Stelle, die die Kosten
+                    der vom Teilnehmer oder der Teilnehmerin gewählten Maßnahme
+                    trägt, z.B. die Bundesagentur für Arbeit, das Jobcenter, der
+                    Berufsförderungsdienst, die Deutsche Rentenversicherung, die
+                    Bezirksregierung.<br /><br />
+                    „Textform“ ist eine lesbare Erklärung, in der die Person des
+                    Erklärenden genannt ist, auf einem dauerhaften Datenträger
+                    abgegeben werden. Ein dauerhafter Datenträger ist jedes
+                    Medium, das es dem Empfänger ermöglicht, eine auf dem
+                    Datenträger befindliche, an ihn persönlich gerichtete
+                    Erklärung so aufzubewahren oder zu speichern, dass sie ihm
+                    oder ihr während eines für ihren Zweck angemessenen
+                    Zeitraums zugänglich ist, und geeignet ist, die Erklärung
+                    unverändert wiederzugeben, z.B. ein Papierausdruck oder ein
+                    PDF-Anhang zu einer E-Mail.<br /><br />
+                    „Unterrichtseinheit“ (UE) definiert die Lernzeit und wird in
+                    Minuten gemessen. Eine UE beträgt 45 Minuten.
+                  </p>
+                </div>
+                <div>
+                  <p class='paragraph text-color-secondary'>
+                    § 4 Leistungserbringung
+                  </p>
+                  <p>
+                    Der Bildungsträger bemüht sich mit der Sorgfalt eines
+                    ordentlichen Kaufmanns darum, die Schulungsleistungen als
+                    Dienstleister korrekt und dem Stand der Technik entsprechend
+                    zu erbringen. Die Erzielung eines bestimmten Erfolges im
+                    Sinne des Werkvertragsrechts schuldet der Bildungsträger
+                    aber nur dann, wenn dies ausdrücklich und mindestens in
+                    Textform zwischen den Vertragsparteien vereinbart wird.<br
+                    /><br />
+                    Folgende Leistungen sind in der Maßnahme inbegriffen, wobei
+                    sich die vom Teilnehmer oder von der Teilnehmerin zwingend
+                    zu beachtenden Beschränkungen nachfolgend im Einzelnen aus
+                    den Paragrafen 5 und 9 dieses Vertrages ergeben. Ebenso sind
+                    dabei die Anlagen: „Anlage 1 – Lernkonzept“ und „Anlage 2 –
+                    Qualifizierungsplan“ zu beachten und gelten als Bestandteil
+                    dieses Vertrages:
+                  </p>
+                </div>
+              </div>
+              <div style='page-break-before: always'>
+                <div class='paragraph-container'>
+                  <div>
+                    <ul>
+                      <li>
+                        <p>
+                          Bereitstellung von Zugang zur Online-Lernplattform des
+                          Bildungsträgers und den dort hinterlegten digitalen
+                          Kursinhalten und -unterlagen;
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Praxisbezogene Lehrveranstaltungen im
+                          Online-Präsenz-Format bzw. im Falle einer hybriden
+                          Durchführung Lehrveranstaltungen im Präsenz-Format am
+                          Standort des Bildungsträgers. Geltende Regelung für
+                          die Durchführungsform unter § 1 Punkt
+                          „Durchführungsform“.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Fallbeispiele, Übungen, Lernkontrollaufgaben, inkl.
+                          Musterlösungen bzw. Korrekturen
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Soweit erforderlich spezielle Zusatzangebote des
+                          Bildungsträgers begleitend zur Maßnahme:
+                        </p>
+                        <ul>
+                          {{#if deal.isB2B}}{{else}}
+                            <li>
+                              <p>Bewerbercoaching</p>
+                            </li>
+                          {{/if}}
+                          <li>
+                            <p>Self-Empowerment</p>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>
+                      Der Teilnehmer oder die Teilnehmerin erhält im Rahmen
+                      einiger Inhalte zusätzliches Begleitmaterial in digitaler
+                      Form. Dessen Nutzung im Zusammenhang mit der Maßnahme ist
+                      in den Kursgebühren enthalten; ein entsprechender Anspruch
+                      gegen den Bildungsträger auf Bereitstellung zusätzlichen
+                      Begleitmaterials besteht jedoch nicht. Das Begleitmaterial
+                      wird ausschließlich elektronisch und nicht in einer
+                      Printversion zur Verfügung gestellt; es darf vom
+                      Teilnehmer oder von der Teilnehmerin ausschließlich für
+                      den korrespondierenden Kurs genutzt werden.
+                      Urhebervermerke dürfen nicht entfernt, verdeckt oder
+                      anderweitig unkenntlich gemacht werden. Die Übertragung
+                      von Lizenzen an Dritte ist strengstens untersagt.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p class='paragraph text-color-secondary'>
+                    § 5 Teilnahmevoraussetzungen
+                  </p>
+                  <p>
+                    An einer Maßnahme beim Bildungsträger teilnehmen kann jede
+                    natürliche Person, die die entsprechenden
+                    Zugangsvoraussetzungen für die jeweilige Maßnahme spätestens
+                    zum Zeitpunkt der Anmeldung erfüllt.
+                  </p>
+                  <p></p>
+                  <p>Zwingende Voraussetzungen sind dabei:</p>
+                  <ul>
+                    <li>
+                      das Einreichen eines Bildungsgutscheins oder einer
+                      Kostenübernahmebescheinigung eines Kostenträgers für die
+                      Maßnahme und
+                    </li>
+                    <li>
+                      eine positive Eignungsfeststellung für die Maßnahme.
+                    </li>
+                  </ul>
+                  <p>
+                    Die Eignungsfeststellung wird vom Bildungsträger im Rahmen
+                    der Beratung durchgeführt.
+                  </p>
+                </div>
+              </div>
+              <div style='page-break-before: always'>
+                <div class='paragraph-container'>
+                  <p class='paragraph text-color-secondary'>
+                    § 6 Rechte des Teilnehmers oder der Teilnehmerin
+                  </p>
+                  <p>
+                    Der Teilnehmer oder die Teilnehmerin hat das Recht, die
+                    Inhalte der in der Maßnahme enthaltenen Kurse auf der
+                    Lernplattform abzurufen bzw. zu streamen und die auf der
+                    Lernplattform bereitgestellten Lernunterlagen für seinen
+                    oder ihren eigenen Gebrauch nur im Rahmen des Kurses zu
+                    nutzen und zu vervielfältigen (herunterladen, ausdrucken).
+                  </p>
+                </div>
+                <div>
+                  <p class='paragraph text-color-secondary'>
+                    § 7 Organisation und Ablauf
+                  </p>
+                  <p class='mb-2'>
+                    Mit Unterschrift des Weiterbildungsvertrages verpflichtet
+                    sich der Teilnehmer oder die Teilnehmerin, den
+                    Maßnahme-Zeitraum und den Stundenplan einzuhalten. Alle
+                    Leistungsnachweise muss er oder sie im genannten
+                    Maßnahme-Zeitraum erbringen.
+                    <br /><br />
+                    Die Maßnahme findet bei einer Online-Durchführungsform in
+                    der gesamten Zeit online in digitaler Form statt. Im Falle
+                    einer hybriden Durchführungsform findet die Maßnahme in der
+                    überwiegenden Zeit online in digitaler Form statt. Geltende
+                    Regelung für die Durchführungsform unter § 1 Punkt
+                    „Durchführungsform“. Dies beinhaltet sowohl dozentengeführte
+                    Elemente als auch Selbstlernphasen. Während der
+                    Online-Selbstlernphase erarbeitet der Teilnehmer oder die
+                    Teilnehmerin die Lerninhalte mit Hilfe der Unterlagen und
+                    des Stundenplans auf der Lernplattform des Bildungsträgers.
+                    In dieser Zeit steht der Teilnehmerin oder dem Teilnehmer
+                    während der gesamten Lernzeit eine fachkundige Lehrkraft zur
+                    Verfügung. Der Teilnehmer oder die Teilnehmerin absolviert
+                    die Maßnahme während der digitalen Lernphase an dem unter §
+                    1 Punkt „Ort der Durchführung“ genannten Ort in der
+                    vorgeschriebenen Lernzeit.<br /><br />
+                    Bei Vollzeit beträgt die Lernzeit 40 (vierzig) UE pro Woche,
+                    die von Montag bis Freitag jeweils von 9.00 bis 16.15 Uhr
+                    stattfindet. In Teilzeit beträgt die Lernzeit 20 (zwanzig)
+                    UE pro Woche, die von Montag bis Freitag jeweils von 9.00
+                    bis 12.15 Uhr stattfindet.
+                  </p>
+                  <p class='pl-4 text-lg text-lime-600 mb-2 mt-2'>
+                    1) Verlängerung der Maßnahme
+                  </p>
+                  {{#if deal.isB2B}}
+                    <p>
+                      Soll der Maßnahmenzeitraum verlängert werden, muss der
+                      Teilnehmer oder die Teilnehmerin mit dem Arbeitgeber diese
+                      abstimmen und die Einwilligung des Bildungsträgers digital
+                      per E-Mail oder postalisch einzuholen.
+                    </p>
+                  {{else}}
+                    <p class='mb-2 mt-2'>
+                      Soll der Maßnahmenzeitraum verlängert werden, muss der
+                      Teilnehmer oder die Teilnehmerin beim Bildungsträger
+                      digital per E-Mail oder postalisch die schriftliche
+                      Einwilligung des Kostenträger sowie einen formlosen
+                      schriftlichen Antrag auf Verlängerung einreichen.
+                    </p>
+                  {{/if}}
+
+                  <p class='pl-4 mb-2 mt-2 text-lg text-lime-600'>
+                    2) Anwesenheitspflicht
+                  </p>
+                  <p class='mt-2'>
+                    Während der Lernzeit muss der Teilnehmer oder die
+                    Teilnehmerin anwesend sein. Fehlt er oder sie unentschuldigt
+                    oder ist auf der Online-Lernplattform nur passiv, wird dies
+                    dem Kostenträger gemeldet. Dieser entscheidet dann über eine
+                    Fortführung der Maßnahme.
+                  </p>
+                </div>
+              </div>
+              <div style='page-break-before: always'>
+                {{#if deal.isB2B}}{{else}}
+                  <div class='paragraph-container'>
+                    <p>
+                      Wird bei einer Maßnahme die Anwesenheit am Standort
+                      gefordert, wird diese zusätzlich mit einer
+                      Anwesenheitsliste dokumentiert, in die der Teilnehmer oder
+                      die Teilnehmerin sich jeden Tag eintragen muss. Außerdem
+                      muss der Teilnehmer oder die Teilnehmerin sich zu Beginn
+                      der Maßnahme die an den Standorten vorhandenen
+                      Informationen zu den Themen Brandschutz und
+                      Arbeitssicherheit sorgfältig durchlesen. Die darin
+                      enthaltenen Regelungen muss der Teilnehmer oder die
+                      Teilnehmerin zu jeder Zeit beachten und einhalten.
+                    </p>
+                  </div>
+                {{/if}}
+                <div>
+                  <p class='paragraph text-color-secondary'>
+                    § 8 Rücktritt und Kündigung
+                  </p>
+                  <p class='pl-4 text-lg text-lime-600 mb-2'>
+                    1) Rücktrittsregelung
+                  </p>
+                  {{#if deal.isB2B}}
+                    <p class='mb-2 mt-2'>
+                      Erfolgt für den Teilnehmer, die Teilnehmerin bzw. dem
+                      Arbeitgeber keine Förderung der Maßnahme nach SGB III oder
+                      SGB II, kann er oder sie von der Maßnahme zurücktreten.
+                      Hierbei entstehen dem Teilnehmer, der Teilnehmerin oder
+                      dem Arbeitgeber keine Kosten.<br /><br />
+                      Das Rücktrittsrecht beträgt 14 (vierzehn) Tage ab
+                      Vertragsabschluss. Von diesem sollte der Teilnehmer oder
+                      die Teilnehmerin jedoch spätestens bis zum Beginn der
+                      Maßnahme Gebrauch gemacht haben. Ist die Maßnahme
+                      gestartet, kann das Rücktrittsrecht nicht mehr ausgeübt
+                      werden. Start der Maßnahme ist unter § 1
+                      Leistungserbringung „Start der Maßnahme“ beschrieben.
+                    </p>
+                  {{else}}
+                    <p class='mb-2 mt-2'>
+                      Erfolgt für den Teilnehmer oder die Teilnehmerin keine
+                      Förderung der Maßnahme nach SGB III oder SGB II, kann er
+                      oder sie von der Maßnahme zurücktreten. Hierbei entstehen
+                      dem Teilnehmer oder der Teilnehmerin keine Kosten.<br
+                      /><br />
+                      Das Rücktrittsrecht beträgt 14 (vierzehn) Tage ab
+                      Vertragsabschluss. Von diesem sollte der Teilnehmer oder
+                      die Teilnehmerin jedoch spätestens bis zum Beginn der
+                      Maßnahme Gebrauch gemacht haben. Ist die Maßnahme
+                      gestartet, kann das Rücktrittsrecht nicht mehr ausgeübt
+                      werden. Start der Maßnahme ist unter § 1
+                      Leistungserbringung „Start der Maßnahme“ beschrieben.
+                    </p>
+                  {{/if}}
+                  <p class='pl-4 text-lg text-lime-600 mb-2 mt-2'>
+                    2) Kündigungsregelung
+                  </p>
+                  <p class='mb-2 mt-2'>
+                    Wenn die Maßnahme bereits begonnen hat, gelten für den
+                    Teilnehmer oder der Teilnehmerin folgende
+                    Kündigungsbedingungen:
+                  </p>
+                  <ul>
+                    <li>
+                      Beendet der Kostenträger die Förderung, kann der
+                      Teilnehmer oder die Teilnehmerin den Weiterbildungsvertrag
+                      kündigen. Kosten entstehen ihm oder ihr hierbei nicht.
+                    </li>
+                    {{#if deal.isB2B}}
+                      <li>
+                        Der Teilnehmer oder die Teilnehmerin kann den
+                        Weiterbildungsvertrag auch kündigen, wenn er oder sie
+                        während der Maßnahme die versicherungspflichtige
+                        Beschäftigung verliert. Es entstehen ihm, ihr bzw. dem
+                        Arbeitgeber hierbei keine Kosten. Führt der Teilnehmer
+                        oder die Teilnehmerin die Maßnahme trotz Arbeitsaufnahme
+                        fort, muss er oder sie dies dem Bildungsträger
+                        mitteilen, damit der Kostenträger eine mögliche
+                        Kostenübernahme prüfen kann. Die entstehenden Kosten
+                        sind vom Teilnehmer oder von der Teilnehmerin selbst zu
+                        tragen, wenn er oder sie die Maßnahme fortführt und die
+                        Arbeitsaufnahme verschweigt.
+                      </li>
+                    {{else}}
+                      <li>
+                        Der Teilnehmer oder die Teilnehmerin kann den
+                        Weiterbildungsvertrag auch kündigen, wenn er oder sie
+                        während der Maßnahme eine versicherungspflichtige
+                        Beschäftigung aufnimmt. Es entstehen ihm oder ihr
+                        hierbei keine Kosten. Führt der Teilnehmer oder die
+                        Teilnehmerin die Maßnahme trotz Arbeitsaufnahme fort,
+                        muss er oder sie dies dem Bildungsträger mitteilen,
+                        damit der Kostenträger eine mögliche Kostenübernahme
+                        prüfen kann. Die entstehenden Kosten sind vom Teilnehmer
+                        oder von der Teilnehmerin selbst zu tragen, wenn er oder
+                        sie die Maßnahme fortführt und die Arbeitsaufnahme
+                        verschweigt.
+                      </li>
+                    {{/if}}
+                  </ul>
+                </div>
+              </div>
+              <div style='page-break-before: always'>
+                <p class='paragraph text-color-secondary'>
+                  § 9 Abwesenheitsregelung
+                </p>
+                <p class='pl-4 text-lg text-lime-600 mb-2'>
+                  1) Kontrolle der Anwesenheit und Mitarbeit auf der
+                  Lernplattform
+                </p>
+                {{#if deal.isB2B}}
+                  <p class='mb-2 mt-2'>
+                    Der geförderte Teilnehmer oder die Teilnehmerin ist
+                    verpflichtet, regelmäßig anwesend zu sein und mitzuarbeiten.
+                    Auf der Lernplattform werden die Anwesenheit und die
+                    Aktivität des Teilnehmers oder der Teilnehmerin regelmäßig
+                    dokumentiert und überprüft. Fehlt der Teilnehmer oder die
+                    Teilnehmerin unentschuldigt oder verspätet sich, wird dies
+                    vermerkt und an den Kostenträger bzw. dem Arbeitgeber
+                    weitergegeben. Mit einem Erfassungs- und Reporting-Modul
+                    wird vom System regelmäßig dokumentiert, überprüft und
+                    ausgewertet, wie der Teilnehmer oder die Teilnehmerin
+                    mitarbeitet und wie erfolgreich seine oder ihre
+                    Lernfortschritte sind. Der für den Teilnehmer oder die
+                    Teilnehmerin zuständige Kostenträger bzw. der Arbeitgeber
+                    wird informiert, wenn der tatsächliche Lernfortschritt
+                    deutlich vom geplanten Status abweicht.
+                  </p>{{else}}
+                  <p class='mb-2 mt-2'>
+                    Der geförderte Teilnehmer oder die Teilnehmerin ist
+                    verpflichtet, regelmäßig anwesend zu sein und mitzuarbeiten.
+                    Auf der Lernplattform werden die Anwesenheit und die
+                    Aktivität des Teilnehmers oder der Teilnehmerin regelmäßig
+                    dokumentiert und überprüft. Fehlt der Teilnehmer oder die
+                    Teilnehmerin unentschuldigt oder verspätet sich, wird dies
+                    vermerkt und an den Kostenträger weitergegeben. Mit einem
+                    Erfassungs- und Reporting-Modul wird vom System regelmäßig
+                    dokumentiert, überprüft und ausgewertet, wie der Teilnehmer
+                    oder die Teilnehmerin mitarbeitet und wie erfolgreich seine
+                    oder ihre Lernfortschritte sind. Der für den Teilnehmer oder
+                    die Teilnehmerin zuständige Kostenträger wird informiert,
+                    wenn der tatsächliche Lernfortschritt deutlich vom geplanten
+                    Status abweicht.
+                  </p>{{/if}}
+                <p class='pl-4 text-lg text-lime-600 mb-2 mt-2'>
+                  2) Informationspflicht im Falle von Abwesenheit
+                </p>
+                <p class='mb-2 mt-2'>
+                  Ist der Teilnehmer oder die Teilnehmerin verhindert, muss er
+                  oder sie dies dem Bildungsträger mit Begründung und einem
+                  Nachweis schriftlich per E-Mail mitteilen. Befreit werden kann
+                  der Teilnehmer oder die Teilnehmerin in den unter den Punkten
+                  §8 2)
+                  {{#if deal.isB2B}} a) – c) {{else}} a) – d) {{/if}}
+                  beschriebenen Fällen. Der Kostenträger wird in jedem Fall
+                  informiert. Die Maßnahme kann wegen Abwesenheit nur verlängert
+                  werden, wenn der Kostenträger dies schriftlich genehmigt.
+                  Erteilt der Kostenträger die Genehmigung nicht, muss der
+                  Teilnehmer oder die Teilnehmerin die Maßnahme in der
+                  vorgesehenen Zeit abschließen. Versäumt der Teilnehmer oder
+                  die Teilnehmerin Präsenz-Lehrveranstaltungen wegen begründeter
+                  Abwesenheit, können diese nicht nachgeholt werden.
+                </p>
+                <p class='pl-4 mb-2 mt-2'>a) Krankheit</p>
+                <p class='mb-2 mt-2'>
+                  Ist der Teilnehmer oder die Teilnehmerin aufgrund von
+                  Krankheit nicht in der Lage, an der Maßnahme teilzunehmen,
+                  muss er oder sie ein ärztliches Attest vorlegen, das vom
+                  ersten Tag der Krankheit an gilt. Das Attest muss dem
+                  Bildungsträger spätestens am nächsten Werktag vorliegen. Es
+                  reicht dabei aus, das Attest in digitaler Form, zum Beispiel
+                  als E-Mail, dem Träger zukommen zu lassen. Wenn der Teilnehmer
+                  oder die Teilnehmerin länger krank ist, als in dem Attest
+                  vermerkt ist, muss er oder sie dem Bildungsträger ein neues
+                  Attest vorlegen.
+                </p>
+                {{#if deal.isB2B}}{{else}}
+                  <p class='pl-4 mb-2 mt-2'>b) Vorstellungsgespräch</p>
+                  <p class='mb-2 mt-2'>
+                    Fehlt der Teilnehmer oder die Teilnehmerin aufgrund eines
+                    Vorstellungsgespräches muss er oder sie einen entsprechenden
+                    Nachweis erbringen (z. B. Einladung zum Vorstellungsgespräch
+                    oder schriftliche Bestätigung des Unternehmens). Dieser muss
+                  </p>
+                {{/if}}
+              </div>
+              <div style='page-break-before: always'>
+                <div class='paragraph-container'>
+                  <p class='mb-2'>
+                    dem Bildungsträger spätestens an dem Werktag der Abwesenheit
+                    per E-Mail zugesendet werden.
+                  </p>
+                  <p class='pl-4 mb-2 mt-2'>{{#if deal.isB2B}} b) {{else}}
+                      c)
+                    {{/if}}
+                    Urlaub</p>
+                  <p class='mt-2 mb-2'>
+                    Urlaub ist während der Maßnahme-Dauer erst bei einer Dauer
+                    von mindestens 26 Unterrichtswochenmöglich. Dafür wird die
+                    Zustimmung des Kostenträgers
+                    {{#if deal.isB2B}}, wie auch des Arbeitgebers
+                    {{else}}{{/if}}benötigt. Diese kann telefonisch oder
+                    schriftlich erfolgen. Die Dauer des Urlaubs ist in der
+                    Teilnahmedauer unter §3 1) Punkt 3 berücksichtigt. Die Dauer
+                    des Urlaubs darf höchstens zwei Wochen betragen. Bei einer
+                    Maßnahme-Dauer von 25 Unterrichtswochen oder weniger, ist
+                    keine Maßnahme-Unterbrechung durch Urlaub vorgesehen.
+                  </p>
+                  <p class='pl-4 mb-2 mt-2'>{{#if deal.isB2B}} c) {{else}}
+                      d)
+                    {{/if}}
+                    Weitere situationsbedingte Fehlzeiten</p>
+                  <p class='mt-2'>
+                    Fehlzeiten, aufgrund der eigenen Eheschließung, die Geburt
+                    des eigenen Kindes, Ableben eines engsten
+                    Familienangehörigen des Teilnehmers oder der Teilnehmerin
+                    sind entschuldigte Abwesenheiten. Ein Nachweis über die
+                    Situation der Abwesenheit ist erforderlich. Die Einreichung
+                    des Nachweises bei dem Bildungsträger in digitaler Form, zum
+                    Beispiel als E-Mail, ist ausreichend. Weitere
+                    situationsbedingte Abwesenheiten können im Einzelfall nach
+                    schriftlicher Genehmigung des Kostenträgers anerkannt
+                    werden.
+                  </p>
+                </div>
+                <div>
+                  <p class='paragraph text-color-secondary'>
+                    § 10 Technische Voraussetzungen
+                  </p>
+                  <p>
+                    Wenn der Teilnehmer oder die Teilnehmerin an der Maßnahme im
+                    Homeoffice teilnimmt, bestätigt er oder sie mit der
+                    Unterschrift dieses Weiterbildungsvertrages, dass er oder
+                    sie die technischen Voraussetzungen für die Kursteilnahme
+                    zur Kenntnis genommen hat. Die technischen Voraussetzungen
+                    sind unter „Anlage 3“ mit der Überschrift “Technische
+                    Voraussetzungen” beschrieben und ein Bestandteil dieses
+                    Vertrages.<br /><br />
+                    Für die vom Teilnehmer oder von der Teilnehmerin eingesetzte
+                    Hard- und Software und die von ihm oder ihr genutzten
+                    Kommunikationswege ist der Teilnehmer oder die Teilnehmerin
+                    selbst verantwortlich. Für die Sicherheit und den Bestand
+                    der Datenkommunikation, der über Dritte ausgeführt wird,
+                    haftet der Bildungsträger ausdrücklich nicht. Er ist
+                    ebenfalls nicht verantwortlich für eventuelle Störungen in
+                    der Datenübermittlung, die durch Konfigurationsprobleme auf
+                    der Seite des Nutzers oder durch technische Fehler
+                    entstehen.<br /><br />
+                    Der Teilnehmer oder die Teilnehmerin hat die Software, die
+                    ihm oder ihr der Bildungsträger zur Verfügung stellt,
+                    ausschließlich zur Durchführung der Maßnahme zu nutzen.
+                    Entstehen dem Bildungsträger Schäden wegen unsachgemäßer
+                    oder nicht genehmigter Nutzung durch den Teilnehmer oder die
+                    Teilnehmerin, so haftet letzterer dafür.
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+              <div style='page-break-before: always'>
+                <div class='paragraph-container'>
+                  <p class='paragraph text-color-secondary'>
+                    § 11 Fälligkeit der Maßnahmengebühr
+                  </p>
+                  <p>
+                    Der Bildungsträger rechnet die Gebühren der Maßnahme direkt
+                    mit dem Kostenträger ab.<br /><br />
+                    Der Kostenträger zahlt die Maßnahmengebühren direkt an den
+                    Bildungsträger. Die Zahlung/en erfolgt/erfolgen in Raten an
+                    den Bildungsträger; die Gewährleistung der fristgerechten
+                    Zahlungen obliegt dem Kostenträger, das Sicherstellen der
+                    fristgerechten Zahlungen obliegt dem Bildungsträger.<br
+                    /><br />
+                    Alle bestehenden und künftigen Ansprüche auf die Zahlung der
+                    Maßnahmengebühren gegenüber dem Kostenträger tritt der
+                    Teilnehmer oder die Teilnehmerin hiermit an den
+                    Bildungsträger (company GmbH) ab. Der Bildungsträger nimmt
+                    die Abtretung des Teilnehmers oder der Teilnehmerin an.
+                  </p>
+                </div>
+                <div>
+                  <p class='paragraph text-color-secondary'>
+                    § 12 Leistungsnachweise
+                  </p>
+                  <p class='mb-2'>
+                    Die auf der Lernplattform hinterlegte Prüfungsordnung
+                    enthält die genauen Abschlussbedingungen und
+                    Leistungsnachweise der Maßnahme.
+                  </p>
+                  <p class='pl-4 text-lg text-lime-600 mb-2 mt-2'>
+                    1) Zertifikat
+                  </p>
+                  <p class='mb-2 mt-2'>
+                    Erbringt der Teilnehmer oder die Teilnehmerin die in der
+                    Prüfungsordnung aufgeführten Leistungen, wird ihm oder ihr
+                    ein Zertifikat ausgestellt. In den Zertifikaten des Trägers
+                    sind der Umfang und die Inhalte der Maßnahme beschrieben.
+                    Nach dem Abschluss und der Bewertung aller vom Teilnehmer
+                    oder von der Teilnehmerin erbrachten Leistungen bekommt der
+                    Teilnehmer oder die Teilnehmerin das Zertifikat für diese
+                    Maßnahme in digitaler Form. In Papierform wird kein
+                    Zertifikat ausgestellt. Zertifikate von anderen Trägern
+                    enthalten die jeweiligen Inhalte dieser Träger. In welcher
+                    Form die Zustellung der Zertifikate erfolgt, ist in den
+                    Informationen zu der jeweiligen externen Zertifizierung auf
+                    der Lernplattform zu finden.
+                  </p>
+                  <p class='pl-4 text-lg text-lime-600 mb-2 mt-2'>
+                    2) Teilnahmebescheinigung
+                  </p>
+                  <p class='mt-2'>
+                    Wird eine Maßnahme abgebrochen oder der Lernplan nicht
+                    eingehalten, wird dem Teilnehmer oder der Teilnehmerin nach
+                    dem Ende der Maßnahme eine Teilnahmebescheinigung
+                    ausgehändigt, in der das Ziel der Maßnahme, der zeitliche
+                    Umfang sowie die absolvierten Inhalte beschrieben sind.
+                  </p>
+                </div>
+              </div>
+              <div style='page-break-before: always'>
+                <div>
+                  <p class='paragraph text-color-secondary'>
+                    § 13 Kopierschutz und Ausschluss von der Nutzung
+                  </p>
+                  <p>
+                    Um eine unautorisierte Nutzung zu verhindern, ist der
+                    Bildungsträger dazu berechtigt, die bereitgestellten
+                    digitalen Inhalte mit einer Kodierung zu versehen. Der
+                    Teilnehmer oder die Teilnehmerin darf diese nicht entfernen.
+                    Mit diesem Vertrag hat der Teilnehmer oder die Teilnehmerin
+                    das Recht, angebotene Streaming-Inhalte online abzurufen,
+                    darf diese aber nicht dauerhaft speichern. Auch das lokale
+                    Ablegen, das Kopieren und das Mitschneiden dieser Inhalte
+                    ist nicht gestattet. Die Streaming-Inhalte dürfen in keiner
+                    Form an Dritte weitergegeben werden. Verstößt der Teilnehmer
+                    oder die Teilnehmerin gegen diese Nutzungsbedingungen, wird
+                    er oder sie von der Maßnahme ausgeschlossen.
+                  </p>
+                </div>
+              </div>
+              <div style='page-break-before: always'>
+                <div>
+                  <p class='paragraph text-color-secondary'>
+                    § 14 Datenschutz personenbezogener Daten
+                  </p>
+                  <p>
+                    Wir erheben, verarbeiten und nutzen die personenbezogenen
+                    Daten unter Einhaltung der geltenden Datenschutzgesetze der
+                    Bundesrepublik Deutschland und der Datenschutzrichtlinien
+                    der Europäischen Union. Damit Teilnehmende sich auf der
+                    Lernplattform anmelden können, müssen bei der Registrierung
+                    bestimmte personenbezogene Daten als Registrierungsangaben
+                    erhoben und verarbeitet werden. Wir nutzen die
+                    personenbezogenen Daten im folgend umschriebenen Umfang
+                    ausschließlich, um die Inanspruchnahme der Lernplattform zu
+                    ermöglichen. Wir erheben, verarbeiten und nutzen die
+                    mitgeteilten Informationen, um die von den Teilnehmenden
+                    gewünschten Services bereitzustellen.<br /><br />
+                    Bei Kontaktaufnahme mit uns werden die Angaben zwecks
+                    Bearbeitung der Anfrage sowie für den Fall, dass
+                    Anschlussfragen entstehen, gespeichert. Die zum Zwecke der
+                    Bestellung angegebenen persönlichen Daten (wie z.B.: Name,
+                    E-Mail-Adresse, Anschrift) werden von uns zur Erfüllung und
+                    Abwicklung der Bestellung verwendet. Weiterhin nutzen wir
+                    die Angaben, um Wege von E-Mail-Newslettern über andere
+                    angebotene Produkte und Dienste oder über Neuigkeiten der
+                    Lernplattform zu informieren. In keinem Fall werden
+                    ungefragt die personenbezogenen Daten zu Werbe- oder
+                    Marketingzwecke Dritten zur Kenntnis gegeben oder diese an
+                    Dritte weitergegeben. Soweit es im Einzelfall erforderlich
+                    ist, müssen personenbezogene Daten eines registrierten
+                    Mitglieds an Dritte weitergegeben werden, wenn diese uns
+                    mitteilen, dass eingestellte Inhalte eines Mitglieds deren
+                    gewerbliche Schutzrechte (Urheber-, Marken- oder
+                    Leistungsschutzrechte sowie immaterielle Rechte) verletzen.
+                  </p>
+                </div>
+
+                <div class='signature-container'>
+                  <div class='signature-date'>
+                    <p>Hannover, den {{deal.createdDate}}</p>
+                  </div>
+                  <div>
+                    <div class='signature-image-container'>
+                      <div class='signature-image signature'>
+                        <img
+                          src='{{StaticFileserver}}/common/images/unterschrift.png'
+                          width='250'
+                        />
+                      </div>
+                      <div class='signature-image stamp'>
+                        <img
+                          src='{{StaticFileserver}}/common/images/round-logo.png'
+                          width='110'
+                        />
+                      </div>
+                    </div>
+                    <div class='signature-fields-container'>
+                      <div class='signature-container'>
+                        <p>_________________________________</p>
+                        <p>
+                          {{client.firstName}}
+                          {{client.lastName}}
+                        </p>
+                        <p class='text-xs'>
+                          (Teilnehmer oder Teilnehmerin)
+                        </p>
+                      </div>
+
+                      <div class='signature-container'>
+                        <p>_________________________________</p>
+                        <p>Geschäftsführung</p>
+                        <p class='text-xs'>(Bildungsträger)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style='page-break-before: always'>
+                <div class='title-container text-color-primary'>
+                  <p class='title'>Anlagen zum Weiterbildungsvertrag</p>
+                </div>
+                <p class='sub-title text-color-secondary'>Anlage 1 – Komponente
+                  unseres Lernkonzepts:</p>
+                <img
+                  src='{{StaticFileserver}}/common/images/lernkonzept.png'
+                  width='700'
+                />
+              </div>
+              <div style='page-break-before: always'>
+                <p class='sub-title text-color-secondary'>Anlage 2 - Technische
+                  Voraussetzungen</p>
+                <p>
+                  für die Nutzung der Lernwelt von company edutainment.
+                </p>
+              </div>
+              <div>
+                <table class='info-table'>
+                  <tbody>
+                    <tr class='border-documents-secondary bg-documents-table'>
+                      <td
+                        class='px-[4px] font-bold border border-documents-secondary align-top'
+                      >
+                        Geeignete Geräte
+                      </td>
+                      <td
+                        class='px-[4px] border border-documents-secondary text-justify'
+                      >
+                        Für die Nutzung der Lernwelt sind alle Computer
+                        geeignet, die mindestens WIN 8 oder macOS 10.13
+                        unterstützen, und über einen Arbeitsspeicher von
+                        wenigstens 4 GB verfügen. Natürlich können zum Lernen
+                        auch alle gängigen mobilen Endgeräte genutzt werden.
+                        Diese sollten für ein effektives Arbeiten jedoch eine
+                        Bildschirmdiagonale von wenigstens 13 Zoll haben.
+                        Empfohlen wird jedoch ein Notebook oder ein Desktop-PC.
+                      </td>
+                    </tr>
+                    <tr class='border-documents-secondary'>
+                      <td
+                        class='px-[4px] font-bold border border-documents-secondary align-top'
+                      >
+                        Browser
+                      </td>
+                      <td
+                        class='px-[4px] border border-documents-secondary text-justify'
+                      >
+                        Die Lernwelt kann in allen Browsern (z.B. Safari, Google
+                        Chrome, Mozilla Firefox oder Edge) verwendet werden.
+                        Empfohlen wird die jeweils aktuelle Version, um eine
+                        einwandfreie Funktion gewährleisten zu können.
+                      </td>
+                    </tr>
+                    <tr class='border-documents-secondary bg-documents-table'>
+                      <td
+                        class='px-[4px] font-bold border border-documents-secondary align-top'
+                      >
+                        Bildschirmauflösung
+                      </td>
+                      <td
+                        class='px-[4px] border border-documents-secondary text-justify'
+                      >
+                        Der Bildschirm sollte eine Mindestauflösung von
+                        1280*1024 haben. So ist eine optimale Darstellung
+                        garantiert.
+                      </td>
+                    </tr>
+                    <tr class='border-documents-secondary'>
+                      <td
+                        class='px-[4px] font-bold border border-documents-secondary align-top'
+                      >
+                        Internetverbindung
+                      </td>
+                      <td
+                        class='px-[4px] border border-documents-secondary text-justify'
+                      >
+                        Eine DSL-6 Mbit-Verbindung sollte Ihr Internet
+                        wenigstens haben. Bei langsameren Verbindungen kann es
+                        möglicherweise zu längeren Wartezeiten oder Abbrüchen
+                        kommen. Für einen Geschwindigkeitstest besuchen Sie
+                        https://www.speedmeter.de.
+                      </td>
+                    </tr>
+                    <tr class='border-documents-secondary bg-documents-table'>
+                      <td
+                        class='px-[4px] font-bold border border-documents-secondary align-top'
+                      >
+                        Mobiles Internet
+                      </td>
+                      <td
+                        class='px-[4px] border border-documents-secondary text-justify'
+                      >
+                        Die Lernwelt kann auch über mobiles Internet oder einen
+                        Surfstick genutzt werden. Beachten Sie aber, dass dies
+                        zu Mehrkosten oder zu einer Drosselung führen kann, da
+                        beim Lernen oft große Datenmengen übertragen werden.
+                      </td>
+                    </tr>
+                    <tr class='px-[4px] border-documents-secondary'>
+                      <td
+                        class='font-bold border border-documents-secondary align-top'
+                      >
+                        Lehrveranstaltungen
+                      </td>
+                      <td
+                        class='px-[4px] border border-documents-secondary text-justify'
+                      >
+                        Für die Lehrveranstaltungen benötigen Sie die Anwendung
+                        Zoom. Sie wählen sich mithilfe eines Links in Ihrer
+                        Lernwelt in eine Veranstaltung ein. Nutzen Sie ein
+                        mobiles Endgerät, können Sie sich die Zoom Mobile App
+                        herunterladen. Ihr Computer sollte mit einem Mikrofon
+                        und einem Lautsprecher ausgestattet sein. Ein Headset
+                        kann ebenfalls benutzt werden.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style='page-break-before: always'>
+                <div>
+                  <p class='sub-title text-color-secondary'>Anlage 3 –
+                    Qualifizierungsplan</p>
+                  <p class='text-color-secondary font-bold'>Die zu
+                    absolvierenden Inhalte und ihr Umfang im Überblick:</p>
+                </div>
+                <div>
+                  <div class='section-content'>
+                    {{#if courseContentWithTeachingUnits}}
+                      <div class='topic-plan'>
+                        {{#each courseContentWithTeachingUnits}}
+                          <div>
+                            <div class='subsection-title'>
+                              <p class='text-color-primary font-bold mb-05'>Ab
+                                {{this.startDate}}
+                                {{this.courseName}}</p>
+                            </div>
+                            <ul class='mt-0'>
+                              {{#each this.courseContent}}
+                                <li class='learning-plan-bullet-list'>
+                                  {{this}}
+                                </li>
+                              {{/each}}
+                            </ul>
+                          </div>
+                        {{/each}}
+                      </div>
+                    {{else}}
+                      <div
+                        style='
+                                 height: 400px;
+                                 display: flex;
+                                 align-items: center;
+                                 justify-content: center;
+                                 color: #ccc;
+                                 font-style: italic;
+                              '
+                      >
+                        Individueller Themenplan wird hier eingefügt
+                      </div>
+                    {{/if}}
+                  </div>
+                  {{#if otherLearningContent}}
+                    <div>
+                      <div class='section-title'>
+                        Begleitende Lerninhalte
+                      </div>
+                      <div class='section-content'>
+                        <div class='topic-plan'>
+                          {{#each otherLearningContent}}
+                            <div>
+                              <div class='subsection-title'>
+                                <p
+                                  class='text-color-primary font-bold mb-05'
+                                >{{this.courseName}}</p>
+                              </div>
+                              <ul class='mt-0'>
+                                {{#each this.courseContent}}
+                                  <li class='learning-plan-bullet-list'>
+                                    {{this}}
+                                  </li>
+                                {{/each}}
+                              </ul>
+                            </div>
+                          {{/each}}
+                        </div>
+                      </div>
+                    </div>
+                  {{/if}}
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><div class='page-footer-space'>&nbsp;</div></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

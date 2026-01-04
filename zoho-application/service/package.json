@@ -1,0 +1,17 @@
+{
+  "name": "zoho-application-service",
+  "version": "0.9.7",
+  "private": true,
+  "devDependencies": {
+    "@company/hardware-rentals-lib": "0.8.2",
+    "@company/welcome-event-lib": "0.9.1",
+    "@company/qualification-plan-lib": "0.12.0",
+    "@company/quotes-lib": "0.12.0",
+    "@company/measure-module-list-lib": "0.9.4",
+    "@company/debtor-lib": "0.10.4",
+    "@company/contract-lib": "0.3.4",
+    "@company/enrollments-lib": "0.2.4",
+    "@company/certificates-lib": "0.2.7",
+    "@company/measure-sheets-lib": "0.7.0"
+  }
+}

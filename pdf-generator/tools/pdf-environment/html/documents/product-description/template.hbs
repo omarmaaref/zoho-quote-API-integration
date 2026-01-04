@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Angebot - Teilnehmende | company | 1.0</title>
+    <link
+      rel='stylesheet'
+      href='{{StaticFileserver}}/product-description/styles.css'
+    />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+  </head>
+  <body>
+    <div class='page-header page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Logo.svg'
+        width='180px'
+        height='auto'
+      />
+    </div>
+    <div class='page-footer page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Welle_primaer.jpg'
+        width='100%'
+        height='100%'
+      />
+      <div class='document-info'>
+        Stand des Dokumentes:
+        {{document.date}}<br />
+      </div>
+    </div>
+    <div class='wrapper'>
+      <table>
+        <thead>
+          <tr>
+            <td><div class='page-header-space'>&nbsp;</div></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='page-content'>
+              <div class='header-line'></div>
+              <div class='cover-page'>
+                <div class='learning-title'>Learning by future</div>
+                <div class='subtitle'>
+                  Kompetenzorientierte und personalisierte Weiterbildung
+                </div>
+                <div class='subtitle'>mit dem Abschluss</div>
+                <div class='course-title'>{{education.title}}</div>
+                <div class='icon-section'>
+                  <div class='icon-item'>
+                    <div class='icon-placeholder'>
+                      <img
+                        src='{{StaticFileserver}}/common/images/company_icon_zeit.jpg'
+                        alt='Zeit Icon'
+                      />
+                    </div>
+                    <div class='icon-text'>
+                      {{education.teachingUnits}}
+                      Unterrichtseinheiten
+                    </div>
+                  </div>
+                  <div class='icon-item'>
+                    <div class='icon-placeholder'>
+                      <img
+                        src='{{StaticFileserver}}/common/images/company_icon_vollzeit.jpg'
+                        alt='Abschluss Icon'
+                      />
+                    </div>
+                    <div class='icon-text'>{{education.teachingMethod}}</div>
+                  </div>
+                  <div class='icon-item'>
+                    <div class='icon-placeholder'>
+                      <img
+                        src='{{StaticFileserver}}/common/images/company_icon_notizblock.jpg'
+                        alt='Plan Icon'
+                      />
+                    </div>
+                    <div class='icon-text'>Personalisierter Lernplan</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class='page-break'
+                style='page-break-before:always;padding-top:0'
+              >
+                <div class='section-title'>
+                  Deine zukünftigen Aufgaben und Chancen
+                </div>
+                {{#each justification}}
+                  <div class='subsection-title'>{{this.title}}</div>
+                  <div class='section-content'>{{this.content}}</div>
+                {{/each}}
+              </div>
+              <div
+                class='page-break'
+                style='page-break-before:always;padding-top:0'
+              >
+                <div class='section-title'>Dein Themenplan</div>
+                <div class='section-content'>
+                  {{#if learningPlan}}
+                    <div>
+                      {{#each learningPlan}}
+                        <div class='learning-plan'>
+                          <div class='subsection-title'>{{this.title}}</div>
+                          <div
+                            class='section-content'
+                          >{{this.introduction}}</div>
+                          <div class='learning-plan-bullet-list'>
+                            Deine zukünftigen Fähigkeiten:
+                          </div>
+                          {{#each this.topicPoints}}
+                            <ul class='learning-plan-bullet-list'>
+                              {{this}}
+                            </ul>
+                          {{/each}}
+                        </div>
+                      {{/each}}
+                    </div>
+                  {{else}}
+                    <div
+                      style='height:400px;display:flex;align-items:center;justify-content:center;color:#ccc;font-style:italic'
+                    >
+                      Individueller Themenplan wird hier eingefügt
+                    </div>
+                  {{/if}}
+                </div>
+              </div>
+              <div
+                class='page-break'
+                style='page-break-before:always;padding-top:0'
+              >
+                <div class='section-title'>
+                  Deine einzigartigen Vorteile mit company
+                </div>
+                <div class='advantages-list'>
+                  {{#each advantages}}
+                    <div class='advantage-item'>
+                      <div class='advantage-title'>{{this.title}}</div>
+                      <div class='advantage-description'>
+                        {{this.description}}
+                      </div>
+                    </div>
+                  {{/each}}
+                </div>
+                <div class='subsection-additional-benefits'>
+                  <div class='subsection-title'>
+                    {{additionalBenefits.title}}
+                  </div>
+                  <ul class='bullet-list'>
+                    {{#each additionalBenefits.items}}
+                      <li>{{this}}</li>
+                    {{/each}}
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><div class='page-footer-space'>&nbsp;</div></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

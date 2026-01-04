@@ -1,0 +1,9 @@
+{
+  "name": "@company/zoho-external-connector",
+  "version": "0.7.2",
+  "private": true,
+  "devDependencies": {
+    "@company/utils-lib": "0.8.1",
+    "@company/zoho-types": "0.12.0"
+  }
+}

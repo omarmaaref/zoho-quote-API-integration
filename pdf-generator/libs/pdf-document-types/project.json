@@ -1,0 +1,9 @@
+{
+  "name": "pdf-document-types",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "projects/pdf-generator/libs/pdf-document-types/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project pdf-document-types --web",
+  "targets": {}
+}

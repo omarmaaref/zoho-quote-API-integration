@@ -1,0 +1,115 @@
+{
+  "StaticFileserver": "http://172.17.0.1:8080/generator",
+  "client": {
+    "email": "tollner-morlong@noemail.invalid",
+    "firstName": "Mi",
+    "lastName": "3",
+    "salutation": ""
+  },
+  "education": {
+    "title": "Perception Software Engineer (m/w/d)",
+    "teachingMethod": "Vollzeit",
+    "teachingUnits": 1200
+  },
+  "document": {
+    "date": "23.6.2025"
+  },
+  "justification": [
+    {
+      "title": "Tätigkeit",
+      "content": "Als Expertin für Perception Software Engineering formst du die Zukunft der Kommunikation zwischen Mensch und Maschine. Von der Programmierung intelligenter Chatbots, die natürliche Sprache verstehen und verarbeiten, bis zur Implementierung komplexer KI-Anwendungen, eröffnest du neue Möglichkeiten der Interaktion und Effizienz."
+    },
+    {
+      "title": "Marktpotenzial",
+      "content": "In einer Welt, die von technologischen Innovationen durchdrungen ist, verschaffst du dir einen entscheidenden Vorteil. Mit dem Wissen über AI Development und Natural Language Processing trägst du maßgeblich zum Erfolg moderner Unternehmen bei und positionierst dich als unverzichtbare Akteurin in einem zukunftssicheren Markt."
+    },
+    {
+      "title": "Aktueller Bedarf und Prognosen",
+      "content": "Die Nachfrage nach Fachkräften im Bereich der KI und digitalen Sprachverarbeitung wächst rasant. Unternehmen aller Größenordnungen suchen nach Spezialistinnen für ihre Automatisierungsinitiativen. Diese Tendenz wird in den nächsten Jahren weiter zunehmen und neue berufliche Türen für dich öffnen."
+    },
+    {
+      "title": "Relevante Branchen",
+      "content": "Ob in der IT, im Gesundheitswesen oder im Finanzsektor – die Expertise von Spezialistinnen für Künstliche Intelligenz wird überall benötigt. Deine Fähigkeiten sind in vielfältigen Branchen gefragt, um den digitalen Wandel aktiv mitzugestalten und innovative Lösungen zu entwickeln."
+    },
+    {
+      "title": "Persönliche Voraussetzungen",
+      "content": "Mit deinem Interesse an Technologien und einem kreativen Geist bist du bestens für den Einstieg in die Welt der KI gewappnet. Deine Fähigkeit, komplexe Probleme zu analysieren und Lösungen zu entwickeln, macht dich zu einer wertvollen Bereicherung für jedes Team."
+    },
+    {
+      "title": "Fachliche Voraussetzungen",
+      "content": "Ein Hintergrund in Informatik oder Ingenieurwesen legt den Grundstein für deinen Erfolg. Sollten dir praktische Erfahrungen fehlen, wirst du in der Weiterbildung Schritt für Schritt in die Welt der KI-Tools eingeführt, um deine Expertise zu erweitern."
+    },
+    {
+      "title": "Gehaltsspanne",
+      "content": "Einstiegsgehälter für Spezialistinnen in diesem Bereich starten bei 50.000 – 60.000 € pro Jahr und können mit wachsender Erfahrung auf bis zu 80.000 € und mehr ansteigen."
+    }
+  ],
+  "learningPlan": {
+    "items": [
+      {
+        "title": "Innovative Softwarelösungen entwickeln",
+        "introduction": "Als zukünftiger Perception Software Engineer entwickeln Sie die Fähigkeit, komplexe Softwarelösungen mit innovativen Ansätzen zu gestalten. Sie lernen, Projekte zielgerichtet zu planen und erfolgreich umzusetzen. Dabei steht die Entwicklung künstlicher Intelligenzen im Mittelpunkt Ihrer Tätigkeit. Sie verknüpfen diverse Technologien, um zukunftssichere Systeme zu realisieren. Ihre Kompetenzen werden durch praktische Anwendungen in projektrelevanten Szenarien gefestigt.",
+        "topicPoints": "- Komplexe Softwareprojekte eigenständig planen und umsetzen\n- Innovative Ansätze zur Problemlösung entwickeln\n- Künstliche Intelligenz in Projekten anwenden\n- Technologien effektiv verknüpfen\n- Zukunftssichere Systeme realisieren"
+      },
+      {
+        "title": "Effiziente Entwicklungsprozesse steuern",
+        "introduction": "In der Rolle eines Perception Software Engineers gestalten Sie effiziente Entwicklungsprozesse. Sie strukturieren Aufgaben und koordinieren Teams, um eine reibungslose Durchführung von Projekten zu gewährleisten. Ihre Fähigkeiten ermöglichen es, Entwicklungsprozesse zu optimieren und kontinuierliche Verbesserungen zu implementieren. Mit einem starken Fokus auf Automatisierung verbessern Sie die Effizienz und Qualität der Softwareentwicklung. Sie treiben zudem die Einführung und Pflege moderner Entwicklungsumgebungen voran.",
+        "topicPoints": "- Entwicklungsprozesse optimieren\n- Teams effektiv koordinieren\n- Automatisierung von Aufgaben implementieren\n- Kontinuierliche Verbesserungen fördern\n- Moderne Entwicklungsumgebungen pflegen"
+      },
+      {
+        "title": "Vielfältige Programmiersprachen anwenden",
+        "introduction": "Diese Maßnahme stattet Sie mit umfassenden Fähigkeiten in der Anwendung verschiedener Programmiersprachen aus. Sie erlangen die Fähigkeit, passende Programmiersprachen für die Anforderungen spezifischer Projekte zu wählen und zielgerichtet einzusetzen. Durch die Anwendung in unterschiedlichen Projektszenarios vertiefen Sie Ihr Verständnis und Ihre Flexibilität im Umgang mit Code. Ihre Kompetenz in der Anpassung und Weiterentwicklung von Software ermöglicht effiziente und effektive Lösungen.",
+        "topicPoints": "- Passende Programmiersprachen für Projekte auswählen\n- Flexibel und sicher in verschiedenen Programmiersprachen coden\n- Software nachhaltig weiterentwickeln\n- Code effektiv anpassen\n- Projektanforderungen zielsicher umsetzen"
+      },
+      {
+        "title": "Systeme mit künstlicher Intelligenz verbessern",
+        "introduction": "Als Perception Software Engineer verfügen Sie über das Know-how und die Fähigkeit, Systeme durch den Einsatz künstlicher Intelligenz entscheidend zu verbessern. Sie entwickeln Strategien, um bestehende Systeme zu analysieren und gezielt mit KI-Technologien zu erweitern. Der Schwerpunkt liegt auf der praktischen Anwendung von Machine-Learning-Methoden zur Optimierung von Systemprozessen. Ihre Expertise unterstützt Sie dabei, innovative Lösungen zu entwickeln, die den neuesten technologischen Standards entsprechen.",
+        "topicPoints": "- Systeme durch den Einsatz von KI erweitern\n- Strategien zur Analyse und Verbesserung entwickeln\n- Machine-Learning-Methoden praktisch anwenden\n- Systemprozesse optimieren\n- Innovative KI-Lösungen entwerfen"
+      },
+      {
+        "title": "Umfassendes Verständnis von Software-Architekturen erlangen",
+        "introduction": "Ihr zukünftiger Erfolg als Perception Software Engineer basiert auch auf einem tiefgreifenden Verständnis moderner Software-Architekturen. Sie lernen, diese Architekturen zu entwerfen und Ihre Anwendungen entsprechend zu gestalten. Ihre analytischen Fähigkeiten ermöglichen es, fundierte Entscheidungen für die Gestaltung von Systemen zu treffen. Dabei berücksichtigen Sie die Anforderungen und Perspektiven der Endanwender, um benutzerzentrierte Lösungen zu entwickeln.",
+        "topicPoints": "- Moderne Software-Architekturen entwerfen\n- Anwendungen gezielt anpassen\n- Analytische Entscheidungen bei der Gestaltung treffen\n- Endanwenderanforderungen einbeziehen\n- Benutzerzentrierte Lösungen entwicklen"
+      }
+    ]
+  },
+  "advantages": [
+    {
+      "title": "Kompetenzorientierter Lernplan",
+      "description": "Dein Abschluss belegt deine erworbene Qualifikation. Kompetenzen, die du bereits mitbringst, berücksichtigen wir in deinem personalisierten Lernplan. Nutze deine Kapazitäten optimal für die Vertiefung und Erarbeitung neuer Fähigkeiten."
+    },
+    {
+      "title": "Personalisiertes Lernen und Kommunizieren",
+      "description": "Auf Grundlage deiner bereits vorhandenen Fähigkeiten erwirbst du bei uns neue Kompetenzen, die dich wirklich voranbringen. Gemeinsam schauen wir, was du bereits mitbringst, und planen im Anschluss nur das ein, was du brauchst, um in deinen Traumjob durchzustarten."
+    },
+    {
+      "title": "Trainings mit Expertinnen und Experten aus der Praxis",
+      "description": "Unser gesamtes Team besteht ausschließlich aus erfahrenen Fachexpertinnen und Fachexperten, die aus der Wirtschaft stammen. Damit gewährleisten wir, dass du sowohl umfassendes Wissen aus Theorie und Praxis vermittelt bekommst als auch erkennst, wo diese in der Realität auseinandergehen. Wir bereiten dich so optimal auf den echten Berufsalltag vor."
+    },
+    {
+      "title": "Deine Exkurse und Zusatzaufgaben",
+      "description": "Lust auf Deepdive? Spezielle Themen vertiefst du auf Wunsch im Rahmen eines Exkurses oder spezieller Zusatzaufgaben. Die Kosten von 150 € bis 250 € für Exkurse und Fallbeispiele übernehmen wir für dich."
+    },
+    {
+      "title": "Bearbeitung eigener Projekte mit Experten-Unterstützung",
+      "description": "Zusätzlich zu deinen prüfungsrelevanten Aufgaben kannst du gerne ein Projekt einreichen, das du mit Unterstützung unserer Fachleute umsetzt. Werte so deine Bewerbungsunterlagen auf."
+    },
+    {
+      "title": "Kostenfreies Consulting nach deiner Weiterbildung",
+      "description": "Auch nach dem Abschluss deiner Weiterleitung unterstützen wir dich weiter: Unsere Fachexpertinnen und Fachexperten stehen dir im ersten Jahr bei allen Schritten beratend zur Seite – und das ganz ohne zusätzliche Kosten. Die Kosten für das Consulting in Höhe von 300 € übernehmen wir vollständig für dich."
+    },
+    {
+      "title": "Garantiert lebenslanges Lernen",
+      "description": "Den Zugang zu deinem Lerncockpit behältst du lebenslang kostenfrei. Greife auf stets neue Inhalte und Exkurse zurück und bleibe auch in Zukunft auf dem aktuellen Stand in deinem Fachgebiet."
+    }
+  ],
+  "additionalBenefits": {
+    "title": "Weitere Vorteile",
+    "items": [
+      "Job- und Praktikumsvermittlung",
+      "24/7 Zugriff auf unsere Lernplattform",
+      "Live-Educational-Support an allen Werktagen zwischen 9:00 Uhr und 16:30 Uhr",
+      "Kostenfreie Soft- und Hardwareausstattung"
+    ]
+  }
+}

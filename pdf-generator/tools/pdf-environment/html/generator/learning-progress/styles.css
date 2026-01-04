@@ -1,0 +1,149 @@
+html,
+body {
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: justify;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #202e4b;
+  text-align: center;
+  font-weight: 800;
+}
+
+h2 {
+  text-align: center;
+  color: #4b7494;
+  margin-bottom: 16px;
+}
+
+.subheading {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.page-content {
+  padding: 0px 50px 90px 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  page-break-inside: auto;
+  font-size: 11px;
+}
+
+.log-table th {
+  text-align: left;
+  padding: 8px;
+  background-color: #cfe5ae;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+}
+
+.log-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.log-table td:first-child,
+.log-table th:first-child {
+  white-space: nowrap;
+  width: 180px;
+}
+
+.log-table td:last-child,
+.log-table th:last-child {
+  white-space: nowrap;
+}
+
+.header-line {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  border-bottom: 4px solid #97c73c;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.day-block {
+  page-break-inside: avoid !important;
+  break-inside: avoid-page !important;
+}
+
+/* Fixed Layout : Do not change */
+.page-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-header {
+  top: 0;
+  height: 105px;
+  background-color: white;
+  padding-top: 10px;
+  width: 800px;
+}
+
+.page-footer {
+  bottom: 0;
+  height: 100px;
+  font-size: 11px;
+  width: 800px;
+  padding-top: 15px;
+  background-color: white;
+}
+
+.page-header-space {
+  height: 115px;
+}
+
+.page-footer-space {
+  height: 135px;
+  margin-bottom: 25px;
+}
+
+.document-pageNr {
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  bottom: 50px;
+  right: -260px;
+}
+
+.legal-information,
+.bank-information {
+  font-size: 10px;
+  position: absolute;
+  bottom: 1.5rem;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.legal-information {
+  left: 55px;
+}
+
+.bank-information {
+  right: 340px;
+  padding-bottom: 40px;
+}
+
+/* Printer settings */
+@page {
+  size: A4;
+  margin: 0;
+}

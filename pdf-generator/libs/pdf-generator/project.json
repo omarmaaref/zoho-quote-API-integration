@@ -1,0 +1,9 @@
+{
+  "name": "pdf-generator-lib",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "projects/pdf-generator/libs/pdf-generator/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project pdf-generator-lib --web",
+  "targets": {}
+}

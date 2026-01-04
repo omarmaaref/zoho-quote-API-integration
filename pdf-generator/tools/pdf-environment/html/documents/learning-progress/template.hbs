@@ -1,0 +1,113 @@
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <title>LEARNING_PROGESS - V1</title>
+    <link
+      rel='stylesheet'
+      href='https://assets.company.de/generator/learning-progress/styles.css'
+    />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+  </head>
+
+  <body>
+    <div class='page-header page-fixed'>
+      <img
+        src='https://assets.company.de/generator/common/images/company_Logo.svg'
+        width='180px'
+        height='auto'
+      />
+    </div>
+
+    <div class='page-footer page-fixed'>
+      <img
+        src='https://assets.company.de/generator/common/images/company_Welle_primaer.jpg'
+        width='100%'
+        height='100%'
+      />
+      <div class='legal-information'>
+        company GmbH<br />USt.-ID: DE 344613488<br />Amtsgericht Hannover, HRB
+        228435<br />Stand des Dokumentes: 23.05.2025
+      </div>
+      <div class='bank-information'></div>
+    </div>
+
+    <div class='wrapper'>
+      <table>
+        <thead>
+          <tr>
+            <td>
+              <div class='page-header-space'>&nbsp;</div>
+            </td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class='page-content'>
+              <div class='header-line'></div>
+              <h1>Stundenplan: {{courseVersionId}}</h1>
+
+              {{#if isAdmin}}
+                <h2>Total UE : {{totalUe}} ({{totalMinutes}} minutes)</h2>
+              {{/if}}
+
+              <table class='log-table'>
+                {{#each weeklyTimelines as |timeline|}}
+                  {{#each timeline.days as |dayItem|}}
+
+                    <tbody class='day-block'>
+                      <tr class='subheading'>
+                        <td colspan='7' style='padding-top: 16px'>
+                          Woche
+                          {{timeline.week}}
+                          / Tag
+                          {{dayItem.day}}
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>Lernzeit</th>
+                        <th>Lernelement</th>
+                        <th>Art</th>
+                        {{#if @root.isAdmin}}
+                          <th>Dauer</th>
+                        {{/if}}
+                      </tr>
+
+                      {{#each dayItem.entries as |entry|}}
+                        <tr>
+                          <td>{{entry.time}}</td>
+                          <td>{{entry.title}}</td>
+                          <td>{{entry.type}}</td>
+                          {{#if @root.isAdmin}}
+                            <td>{{entry.durationMin}} Min</td>
+                          {{/if}}
+                        </tr>
+                      {{/each}}
+                    </tbody>
+
+                  {{/each}}
+                {{/each}}
+              </table>
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>
+              <div class='page-footer-space'>&nbsp;</div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+
+</html>

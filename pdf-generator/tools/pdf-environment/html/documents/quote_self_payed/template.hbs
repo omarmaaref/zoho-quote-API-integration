@@ -1,0 +1,331 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Angebot - Kostenträger | company | 1.0</title>
+    <link
+      rel='stylesheet'
+      href='{{StaticFileserver}}/quote-self-paid/styles.css'
+    />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+  </head>
+  <body>
+    <div class='page-header page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Logo.svg'
+        width='180px'
+        height='auto'
+      />
+    </div>
+    <div class='page-footer page-fixed'>
+      <img
+        src='{{StaticFileserver}}/common/images/company_Welle_primaer.jpg'
+        width='100%'
+        height='100%'
+      />
+      <div class='legal-information'>
+        company GmbH<br />
+        Geschäftsführung:<br />
+        Alexandra Ingwersen, Christoph Jordan<br />
+        USt.-ID: DE 344613488<br />
+        Amtsgericht Hannover, HRB 228435<br />
+      </div>
+      <div class='bank-information'>
+        Bank: Deutsche Bank<br />IBAN: DE40 8607 0000 0016 7049 00<br />BIC:
+        DEUTDE8LXXX<br />
+        Stand des Dokumentes:
+        {{dateOfDocumentVersion}}<br />
+        <br />
+
+      </div>
+    </div>
+    <div class='wrapper'>
+      <table>
+        <thead>
+          <tr>
+            <td><div class='page-header-space'>&nbsp;</div>
+              <div class='company-info'>
+                company GmbH, Philipsbornstraße 2, 30165 Hannover, Tel.: 0800
+                8070602, E-Mail: beratung@company.de, Web: www.company.de
+              </div></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='page-content'>
+              <div class='header-line'></div>
+              <div class='document-header'>
+                <div class='client-address'>
+                  {{client.salutation}}
+                  {{client.firstName}}
+                  {{client.lastName}}<br />
+                  {{client.email}}<br />
+                  <span class='adress'>
+                    {{client.street}},
+                    {{client.zip}}
+                    {{client.city}}
+                  </span>
+                  <br />
+                </div>
+              </div>
+              <div class='greeting'>
+                <div style='text-align: right'>
+                  Hannover,
+                  {{quote.date}}
+                </div>
+                <div style='margin-top:20px'>
+                  Liebe/r
+                  {{client.firstName}}
+                  {{client.lastName}},<br /><br />für Ihr Interesse an unseren
+                  Weiterbildungen danken wir Ihnen. Basierend auf Ihren Angaben,
+                  unterbreiten wir Ihnen folgendes Weiterbildungsangebot:
+                </div>
+              </div>
+              <table class='offer-table'>
+                <tr>
+                  <th>Angebotsnummer</th>
+                  <td>{{quote.number}}
+                    <span style='font-weight: bold'>- ENTWURF</span></td>
+                </tr>
+                {{#if learningPlan}}
+                  <tr>
+                    <th>
+                      <div style='height:100%'>Kurse der Weiterbildung<br />
+                        <span class='note-text'>
+                          <div>*</div>
+                          <div>
+                            Detaillierte Inhalte und Zugangsvoraussetzungen
+                            siehe ab Seite 2. Auflistung der Kurse.</div>
+                        </span>
+                      </div>
+                    </th>
+                    <td>
+                      <div style='font-size:12px'>
+                        {{#each learningPlan}}
+                          {{this.courseName}}{{#unless @last}}, {{/unless}}
+                        {{/each}}
+                      </div>
+                    </td>
+                  </tr>
+                {{/if}}
+
+                <tr>
+                  <th>Unterrichtsform</th>
+                  <td>
+                    {{quote.teachingUnitsPerDay}}
+                    UE pro Tag / online Durchführung
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>Weiterbildungszeitraum</th>
+                  <td>{{quote.startDate}} - {{quote.endDate}}</td>
+                </tr>
+                {{#if quote.discountPercentage}}
+                  <tr>
+                    <th>Nachlass</th>
+                    <td>
+                      {{quote.discountPercentage}}
+                    </td>
+                  </tr>
+                {{/if}}
+                <tr>
+                  <th>Weiterbildungskosten</th>
+                  <td style='line-height: 1.4;'>
+                    Gesamtbetrag netto:
+                    {{quote.subTotal}}<br />
+                    {{#if quote.discount}}
+                      Abzgl. Nachlass:
+                      {{quote.discount}}
+                      <br />
+                    {{/if}}
+                    <u>Zzgl. 19% MwSt: {{quote.tax}}</u><br />
+                    <div style='margin-top:4px'><b>Gesamtbetrag inkl. MwSt:
+                        {{quote.grandTotal}}</b></div>
+                  </td>
+                </tr>
+                {{#if quote.paymentBreak}}
+                  <tr>
+                    <th>Zahlpause</th>
+                    <td>{{quote.paymentBreak}}</td>
+                  </tr>
+                {{/if}}
+                {{#if quote.paymentTerms}}
+                  <tr>
+                    <th>Zahlungsbedingungen</th>
+                    <td>{{quote.paymentTerms}}</td>
+                  </tr>
+                {{/if}}
+                <tr>
+                  <th>Gültigkeit des Angebotes</th>
+                  <td>{{quote.dueDate}}</td>
+                </tr>
+              </table>
+
+              <div class='info' style='height: 230px'>
+                <div class='legal-info'>
+                  <div>
+                    Es gilt das gesetzliche Widerrufsrecht für Verbraucher.
+                    Unsere Widerrufsbelehrung und das Muster-Widerrufsformular
+                    finden Sie
+                    <a
+                      href='https://company.de/generator/contract-self-paid/company_2025-10-11_Widerrufsbelehrung%20und%20Muster.pdf'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      hier</a>.
+                  </div>
+                  <div class='section bold'>
+                    Ich akzeptiere die
+                    <a
+                      href='https://company.de/generator/contract-self-paid/company_2025-10-10_Weiterbildungsbedingungen_nichtgef%C3%B6rderte.pdf'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >Allgemeinen Weiterbildungsbedingungen</a>
+                    und bestätige, die
+                    <a
+                      href='https://company.de/generator/contract-self-paid/company_2025-09-15_Datenschutzinformationen%20f%C3%BCr%20Weiterbildungen.pdf'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >Datenschutzinformationen</a>
+                    erhalten zu haben.
+                  </div>
+                  {{#if quote.startDateBefore14days}}
+                    <div class='section bold'>
+                      Ich stimme zu, dass die company GmbH bereits vor Ablauf
+                      der Widerrufsfrist mit der Durchführung der Weiterbildung
+                      beginnt. Mir ist bewusst, dass mein Widerrufsrecht
+                      erlischt, sobald die company GmbH die Leistung vollständig
+                      erbracht hat.
+                    </div>
+                  {{/if}}
+                </div>
+                <div class='signature'>
+                  <div class='sig-line'>
+                    <div class='sig-field'></div>
+                    <div class='sig-field'></div>
+                  </div>
+                  <div class='sig-labels'>
+                    <div>Datum</div>
+                    <div>Unterschrift</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class='page-break'
+                style='page-break-before: always; padding-top: 0'
+              >
+                <h3 style='font-weight:300'>Anlage 1</h3>
+                <div class='section-title'>Themenplan und Voraussetzungen</div>
+                <div class='section-content'>
+                  {{#if learningPlan}}
+                    <div class='topic-plan'>
+                      {{#each learningPlan}}
+                        <div>
+                          <div class='subsection-title'>
+                            {{this.courseName}}
+                          </div>
+                          <ul>
+                            {{#each this.courseContent}}
+                              <li class='learning-plan-bullet-list'>
+                                {{this}}
+                              </li>
+                            {{/each}}
+                          </ul>
+                        </div>
+                      {{/each}}
+                    </div>
+                  {{else}}
+                    <div
+                      style='
+                                 height: 400px;
+                                 display: flex;
+                                 align-items: center;
+                                 justify-content: center;
+                                 color: #ccc;
+                                 font-style: italic;
+                              '
+                    >
+                      Individueller Themenplan wird hier eingefügt
+                    </div>
+                  {{/if}}
+                </div>
+                {{#if otherLearningContent}}
+                  <div>
+                    <div class='section-title'>
+                      Begleitende Lerninhalte
+                    </div>
+                    <div class='section-content'>
+                      <div class='topic-plan'>
+                        {{#each otherLearningContent}}
+                          <div>
+                            <div class='subsection-title'>
+                              {{this.courseName}}
+                            </div>
+                            <ul>
+                              {{#each this.courseContent}}
+                                <li class='learning-plan-bullet-list'>
+                                  {{this}}
+                                </li>
+                              {{/each}}
+                            </ul>
+                          </div>
+                        {{/each}}
+                      </div>
+                    </div>
+                  </div>
+                {{/if}}
+
+              </div>
+
+              <div
+                class='page-break'
+                style='page-break-before: always; padding-top: 0'
+              >
+                <div class='section-title'>
+                  Fachliche Voraussetzungen
+                </div>
+                {{#if quote.missingRequiredCourses}}
+                  <p class='section-content'>
+                    Abgeschlossene Ausbildung oder Studium oder mindestens drei
+                    Jahre Berufserfahrung mit nachweisbarer Expertise in allen
+                    folgenden Bereichen:
+                    {{quote.missingRequiredCourses}}
+                  </p>
+                {{else}}
+                  <p class='section-content'>
+                    Abgeschlossene Ausbildung oder Studium oder mindestens drei
+                    Jahre Berufserfahrung mit nachweisbarer Expertise.
+                  </p>
+                {{/if}}
+                <div class='section-title'>
+                  Technische Anforderungen
+                </div>
+                <p class='section-content'>
+                  Für die Teilnahme an unseren Weiterbildungen wird ein eigener
+                  Laptop oder PC mit stabiler Internetverbindung benötigt. Das
+                  Gerät sollte über ein aktuelles Betriebssystem, einen
+                  Dual-Core-Prozessor (z. B. Intel i5 oder vergleichbar) sowie
+                  mindestens 8 GB RAM verfügen; empfohlen werden 16 GB RAM, um
+                  alle Inhalte reibungslos nutzen zu können.
+                </p>
+
+              </div>
+
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><div class='page-footer-space'>&nbsp;</div></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
